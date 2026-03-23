@@ -1,0 +1,145 @@
+{
+  "$schema": "../../schema/stage.schema.json",
+  "schemaVersion": "1.0.0",
+  "trailId": "trilha_feira_ao_anoitecer",
+  "id": "e1_chegada",
+  "order": 1,
+  "title": "A chegada",
+  "timeLimitSec": 75,
+  "scenePrompt": "A feira desperta e as vozes se misturam.",
+  "objectiveLabel": "Encontre palavras da feira",
+  "narrativeStanza": [
+    "Lia chegou pela estrada,",
+    "com poeira no gibao,",
+    "traz no peito a voz da feira,",
+    "feito reza e cantacao."
+  ],
+  "grid": [
+    "FEIRAXX",
+    "POEIRAX",
+    "VOZESAX",
+    "BANCAAX",
+    "SERTAOX",
+    "TOADAXX",
+    "CANCAOX"
+  ],
+  "validWords": [
+    {
+      "word": "feira",
+      "category": "common",
+      "points": 10
+    },
+    {
+      "word": "voz",
+      "category": "common",
+      "points": 10
+    },
+    {
+      "word": "banca",
+      "category": "common",
+      "points": 10
+    },
+    {
+      "word": "sertao",
+      "category": "common",
+      "points": 10
+    },
+    {
+      "word": "poeira",
+      "category": "rare",
+      "points": 20
+    }
+  ],
+  "rareWords": [
+    "poeira"
+  ],
+  "bonusRhymes": [
+    {
+      "word": "toada",
+      "rhymesWith": "estrada",
+      "points": 30,
+      "tag": "curated"
+    },
+    {
+      "word": "cancao",
+      "rhymesWith": "cantacao",
+      "points": 30,
+      "tag": "curated"
+    }
+  ],
+  "gridPlacements": [
+    {
+      "id": "word-feira",
+      "word": "FEIRA",
+      "category": "common",
+      "start": [0, 0],
+      "end": [0, 4],
+      "direction": "E"
+    },
+    {
+      "id": "word-poeira",
+      "word": "POEIRA",
+      "category": "rare",
+      "start": [1, 0],
+      "end": [1, 5],
+      "direction": "E"
+    },
+    {
+      "id": "word-voz",
+      "word": "VOZ",
+      "category": "common",
+      "start": [2, 0],
+      "end": [2, 2],
+      "direction": "E"
+    },
+    {
+      "id": "word-banca",
+      "word": "BANCA",
+      "category": "common",
+      "start": [3, 0],
+      "end": [3, 4],
+      "direction": "E"
+    },
+    {
+      "id": "word-sertao",
+      "word": "SERTAO",
+      "category": "common",
+      "start": [4, 0],
+      "end": [4, 5],
+      "direction": "E"
+    },
+    {
+      "id": "rhyme-toada",
+      "word": "TOADA",
+      "category": "rhyme",
+      "start": [5, 0],
+      "end": [5, 4],
+      "direction": "E"
+    },
+    {
+      "id": "rhyme-cancao",
+      "word": "CANCAO",
+      "category": "rhyme",
+      "start": [6, 0],
+      "end": [6, 5],
+      "direction": "E"
+    }
+  ],
+  "hint": {
+    "uses": 1,
+    "penalty": 15,
+    "behavior": "highlight-first-letter"
+  },
+  "completionRule": {
+    "requiredTargetWords": 5,
+    "bonusWordsOptional": true
+  },
+  "transitionMessage": "Lia percebe um clima estranho, como se a feira estivesse encolhendo.",
+  "transitionBeat": "Uma banca voltou a ter nome.",
+  "difficultyTags": [
+    "tutorial",
+    "reconhecimento-rapido",
+    "rima-facil"
+  ],
+  "audioCue": "stage-01-drum"
+}

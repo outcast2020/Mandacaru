@@ -1,0 +1,295 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://mandacaru.local/schema/stage.schema.json",
+  "title": "Mandacaru Stage",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "trailId",
+    "id",
+    "order",
+    "title",
+    "timeLimitSec",
+    "scenePrompt",
+    "objectiveLabel",
+    "narrativeStanza",
+    "grid",
+    "validWords",
+    "rareWords",
+    "bonusRhymes",
+    "gridPlacements",
+    "hint",
+    "completionRule",
+    "transitionMessage",
+    "transitionBeat",
+    "difficultyTags",
+    "audioCue"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "schemaVersion": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+    },
+    "trailId": {
+      "type": "string",
+      "pattern": "^[a-z0-9_\\-]+$"
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^e[1-5]_[a-z0-9_\\-]+$"
+    },
+    "order": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 5
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "timeLimitSec": {
+      "type": "integer",
+      "minimum": 30,
+      "maximum": 90
+    },
+    "scenePrompt": {
+      "type": "string",
+      "minLength": 1
+    },
+    "objectiveLabel": {
+      "type": "string",
+      "minLength": 1
+    },
+    "narrativeStanza": {
+      "type": "array",
+      "minItems": 4,
+      "maxItems": 4,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "grid": {
+      "type": "array",
+      "minItems": 6,
+      "maxItems": 8,
+      "items": {
+        "type": "string",
+        "pattern": "^[A-Z]+$",
+        "minLength": 6,
+        "maxLength": 8
+      }
+    },
+    "validWords": {
+      "type": "array",
+      "minItems": 5,
+      "maxItems": 7,
+      "items": {
+        "$ref": "#/$defs/wordTarget"
+      }
+    },
+    "rareWords": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z]+$"
+      }
+    },
+    "bonusRhymes": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 2,
+      "items": {
+        "$ref": "#/$defs/rhymeTarget"
+      }
+    },
+    "gridPlacements": {
+      "type": "array",
+      "minItems": 7,
+      "items": {
+        "$ref": "#/$defs/gridPlacement"
+      }
+    },
+    "hint": {
+      "type": "object",
+      "required": [
+        "uses",
+        "penalty",
+        "behavior"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "uses": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "penalty": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "behavior": {
+          "type": "string",
+          "enum": [
+            "highlight-first-letter"
+          ]
+        }
+      }
+    },
+    "completionRule": {
+      "type": "object",
+      "required": [
+        "requiredTargetWords",
+        "bonusWordsOptional"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "requiredTargetWords": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "bonusWordsOptional": {
+          "type": "boolean"
+        }
+      }
+    },
+    "transitionMessage": {
+      "type": "string"
+    },
+    "transitionBeat": {
+      "type": "string"
+    },
+    "difficultyTags": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string"
+      }
+    },
+    "audioCue": {
+      "type": "string"
+    }
+  },
+  "$defs": {
+    "point": {
+      "type": "array",
+      "prefixItems": [
+        {
+          "type": "integer",
+          "minimum": 0
+        },
+        {
+          "type": "integer",
+          "minimum": 0
+        }
+      ],
+      "items": false
+    },
+    "wordTarget": {
+      "type": "object",
+      "required": [
+        "word",
+        "category",
+        "points"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "word": {
+          "type": "string",
+          "pattern": "^[a-z]+$"
+        },
+        "category": {
+          "type": "string",
+          "enum": [
+            "common",
+            "rare"
+          ]
+        },
+        "points": {
+          "type": "integer",
+          "enum": [
+            10,
+            20
+          ]
+        }
+      }
+    },
+    "rhymeTarget": {
+      "type": "object",
+      "required": [
+        "word",
+        "rhymesWith",
+        "points",
+        "tag"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "word": {
+          "type": "string",
+          "pattern": "^[a-z]+$"
+        },
+        "rhymesWith": {
+          "type": "string",
+          "pattern": "^[a-z]+$"
+        },
+        "points": {
+          "type": "integer",
+          "const": 30
+        },
+        "tag": {
+          "type": "string",
+          "const": "curated"
+        }
+      }
+    },
+    "gridPlacement": {
+      "type": "object",
+      "required": [
+        "id",
+        "word",
+        "category",
+        "start",
+        "end",
+        "direction"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "word": {
+          "type": "string",
+          "pattern": "^[A-Z]+$"
+        },
+        "category": {
+          "type": "string",
+          "enum": [
+            "common",
+            "rare",
+            "rhyme"
+          ]
+        },
+        "start": {
+          "$ref": "#/$defs/point"
+        },
+        "end": {
+          "$ref": "#/$defs/point"
+        },
+        "direction": {
+          "type": "string",
+          "enum": [
+            "E",
+            "S",
+            "SE",
+            "NE"
+          ]
+        }
+      }
+    }
+  }
+}

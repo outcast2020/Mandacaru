@@ -1,0 +1,135 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://mandacaru.local/schema/poetic-metadata.schema.json",
+  "title": "Mandacaru Poetic Metadata",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "id",
+    "title",
+    "themes",
+    "tone",
+    "toponyms",
+    "sertaoImagery",
+    "culturalEntities",
+    "rhymeModes",
+    "speakerProfiles"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "schemaVersion": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+    },
+    "id": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "themes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "tone": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "toponyms": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "sertaoImagery": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "culturalEntities": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "rhymeModes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "label",
+          "description"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "label": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "speakerProfiles": {
+      "type": "object",
+      "required": [
+        "AB",
+        "BB",
+        "NARRADOR"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "AB": {
+          "$ref": "#/$defs/speakerProfile"
+        },
+        "BB": {
+          "$ref": "#/$defs/speakerProfile"
+        },
+        "NARRADOR": {
+          "$ref": "#/$defs/speakerProfile"
+        }
+      }
+    }
+  },
+  "$defs": {
+    "speakerProfile": {
+      "type": "object",
+      "required": [
+        "label",
+        "traits",
+        "themes"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "label": {
+          "type": "string"
+        },
+        "traits": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "themes": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

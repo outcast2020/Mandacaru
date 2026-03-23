@@ -1,0 +1,160 @@
+{
+  "$schema": "../../schema/stage.schema.json",
+  "schemaVersion": "1.0.0",
+  "trailId": "trilha_feira_ao_anoitecer",
+  "id": "e3_vento_do_esquecimento",
+  "order": 3,
+  "title": "O vento do esquecimento",
+  "timeLimitSec": 60,
+  "scenePrompt": "As lonas batem, a poeira sobe e os nomes correm risco de sumir.",
+  "objectiveLabel": "Segure as palavras antes que o vento leve",
+  "narrativeStanza": [
+    "Veio um vento pelas lonas,",
+    "sacudindo o corredor,",
+    "cada nome que se perde",
+    "leva junto um contador."
+  ],
+  "grid": [
+    "VENTOXXX",
+    "PANOXXXX",
+    "POEIRAXX",
+    "SEMENTEX",
+    "PANELAXX",
+    "MEMORIAX",
+    "ALENTOXX",
+    "MOMENTOX"
+  ],
+  "validWords": [
+    {
+      "word": "vento",
+      "category": "common",
+      "points": 10
+    },
+    {
+      "word": "pano",
+      "category": "common",
+      "points": 10
+    },
+    {
+      "word": "poeira",
+      "category": "common",
+      "points": 10
+    },
+    {
+      "word": "semente",
+      "category": "rare",
+      "points": 20
+    },
+    {
+      "word": "panela",
+      "category": "common",
+      "points": 10
+    },
+    {
+      "word": "memoria",
+      "category": "rare",
+      "points": 20
+    }
+  ],
+  "rareWords": [
+    "semente",
+    "memoria"
+  ],
+  "bonusRhymes": [
+    {
+      "word": "alento",
+      "rhymesWith": "vento",
+      "points": 30,
+      "tag": "curated"
+    },
+    {
+      "word": "momento",
+      "rhymesWith": "vento",
+      "points": 30,
+      "tag": "curated"
+    }
+  ],
+  "gridPlacements": [
+    {
+      "id": "word-vento",
+      "word": "VENTO",
+      "category": "common",
+      "start": [0, 0],
+      "end": [0, 4],
+      "direction": "E"
+    },
+    {
+      "id": "word-pano",
+      "word": "PANO",
+      "category": "common",
+      "start": [1, 0],
+      "end": [1, 3],
+      "direction": "E"
+    },
+    {
+      "id": "word-poeira",
+      "word": "POEIRA",
+      "category": "common",
+      "start": [2, 0],
+      "end": [2, 5],
+      "direction": "E"
+    },
+    {
+      "id": "word-semente",
+      "word": "SEMENTE",
+      "category": "rare",
+      "start": [3, 0],
+      "end": [3, 6],
+      "direction": "E"
+    },
+    {
+      "id": "word-panela",
+      "word": "PANELA",
+      "category": "common",
+      "start": [4, 0],
+      "end": [4, 5],
+      "direction": "E"
+    },
+    {
+      "id": "word-memoria",
+      "word": "MEMORIA",
+      "category": "rare",
+      "start": [5, 0],
+      "end": [5, 6],
+      "direction": "E"
+    },
+    {
+      "id": "rhyme-alento",
+      "word": "ALENTO",
+      "category": "rhyme",
+      "start": [6, 0],
+      "end": [6, 5],
+      "direction": "E"
+    },
+    {
+      "id": "rhyme-momento",
+      "word": "MOMENTO",
+      "category": "rhyme",
+      "start": [7, 0],
+      "end": [7, 6],
+      "direction": "E"
+    }
+  ],
+  "hint": {
+    "uses": 1,
+    "penalty": 15,
+    "behavior": "highlight-first-letter"
+  },
+  "completionRule": {
+    "requiredTargetWords": 6,
+    "bonusWordsOptional": true
+  },
+  "transitionMessage": "A perda deixa de ser abstrata; se Lia falhar, personagens e oficios se apagam.",
+  "transitionBeat": "O povo comecou a lembrar de quem vendia cada coisa.",
+  "difficultyTags": [
+    "distracao-visual",
+    "ameaca-clara",
+    "mid-grid"
+  ],
+  "audioCue": "stage-03-wind"
+}

@@ -1,0 +1,3239 @@
+{
+  "title": "Peleja de Cordel — Bule-Bule x Antônio Barreto",
+  "source_note": "Estrutura elaborada a partir da transcrição visível nas fotos compartilhadas na conversa.",
+  "automatic_analysis_note": "A marcação de métrica e de rima é automática e heurística; pode haver ajustes finos em escansão poética e em chaves de rima.",
+  "stanzas": [
+    {
+      "id": 1,
+      "speaker": "NARRADOR",
+      "section": "abertura",
+      "meter": "sextilha",
+      "line_count": 6,
+      "rhyme_scheme_estimated": "AABACA",
+      "end_words": [
+        "sorrindo",
+        "desabrochando",
+        "gente",
+        "bailando",
+        "festa",
+        "inspirando"
+      ],
+      "lines": [
+        "A primavera sorrindo",
+        "As flores desabrochando",
+        "O sol aquecendo a gente",
+        "As nuvens no céu bailando",
+        "O sertão todinho em festa",
+        "E a lua nos inspirando."
+      ]
+    },
+    {
+      "id": 2,
+      "speaker": "NARRADOR",
+      "section": "abertura",
+      "meter": "sextilha",
+      "line_count": 6,
+      "rhyme_scheme_estimated": "AABACA",
+      "end_words": [
+        "cantando",
+        "correndo",
+        "nuvens",
+        "movendo",
+        "guarda",
+        "guarnecendo"
+      ],
+      "lines": [
+        "A passarada cantando",
+        "As águas do rio correndo",
+        "Beija-flor beijando as nuvens",
+        "Toda a Terra se movendo",
+        "E o nosso anjo da guarda",
+        "Bem aqui nos guarnecendo."
+      ]
+    },
+    {
+      "id": 3,
+      "speaker": "NARRADOR",
+      "section": "abertura",
+      "meter": "sextilha",
+      "line_count": 6,
+      "rhyme_scheme_estimated": "ABCBDB",
+      "end_words": [
+        "fervendo",
+        "Sudão",
+        "desavença",
+        "grotão",
+        "perto",
+        "atenção"
+      ],
+      "lines": [
+        "O mundo todo fervendo",
+        "De Brasília ao Sudão",
+        "Guerra, fome, desavença",
+        "No mais distante grotão",
+        "E a paz aqui tão perto",
+        "A chamar nossa atenção."
+      ]
+    },
+    {
+      "id": 4,
+      "speaker": "NARRADOR",
+      "section": "abertura",
+      "meter": "sextilha",
+      "line_count": 6,
+      "rhyme_scheme_estimated": "ABCDEB",
+      "end_words": [
+        "rojão",
+        "poesia",
+        "Santana",
+        "2017",
+        "Pé-de-Parede",
+        "alegria"
+      ],
+      "lines": [
+        "E foi nesse bom rojão",
+        "Que brotou a poesia",
+        "Justo em Feira de Santana",
+        "Após uma Cantoria. (21/10/2017)",
+        "Num belo Pé-de-Parede",
+        "Colorido de alegria!"
+      ]
+    },
+    {
+      "id": 5,
+      "speaker": "NARRADOR",
+      "section": "apresentacao",
+      "meter": "sextilha",
+      "line_count": 6,
+      "rhyme_scheme_estimated": "ABCDEF",
+      "end_words": [
+        "Bahia",
+        "pelejar",
+        "Barreto",
+        "além-mar",
+        "Bule-Bule",
+        "exemplar"
+      ],
+      "lines": [
+        "Dois poetas da Bahia",
+        "Resolveram pelejar",
+        "O mestre Antônio Barreto",
+        "Conhecido além-mar",
+        "E o discípulo Bule-Bule",
+        "Um aluno exemplar."
+      ]
+    },
+    {
+      "id": 6,
+      "speaker": "AB",
+      "section": "peleja",
+      "meter": "sextilha",
+      "line_count": 6,
+      "rhyme_scheme_estimated": "ABCDEF",
+      "end_words": [
+        "Barreto",
+        "lugar",
+        "Bule-Bule",
+        "avatar",
+        "amizade",
+        "pelejar"
+      ],
+      "lines": [
+        "Eu sou Antônio Barreto",
+        "Santa Bárbara é o meu lugar",
+        "Agora com Bule-Bule",
+        "Nosso grande avatar",
+        "Com respeito e amizade",
+        "Meu desejo é pelejar."
+      ]
+    },
+    {
+      "id": 7,
+      "speaker": "BB",
+      "section": "peleja",
+      "meter": "sextilha",
+      "line_count": 6,
+      "rhyme_scheme_estimated": "ABCBDB",
+      "end_words": [
+        "preparar",
+        "afinada",
+        "Cardoso",
+        "parada",
+        "Barreto",
+        "pancada"
+      ],
+      "lines": [
+        "Pode então se preparar",
+        "Que a viola está afinada",
+        "Sou de Antônio Cardoso",
+        "E topo qualquer parada",
+        "Se prepare, seu Barreto",
+        "Que eu vou lhe dar pancada."
+      ]
+    },
+    {
+      "id": 8,
+      "speaker": "AB",
+      "section": "peleja",
+      "meter": "sextilha",
+      "line_count": 6,
+      "rhyme_scheme_estimated": "ABCBDB",
+      "end_words": [
+        "camarada",
+        "judição",
+        "mestre",
+        "irmão",
+        "somos",
+        "sertão"
+      ],
+      "lines": [
+        "Que é isso camarada",
+        "Não vale judição",
+        "Pois você é o meu mestre",
+        "É amigo e bom irmão",
+        "E além de tudo somos",
+        "Dois poetas do sertão."
+      ]
+    },
+    {
+      "id": 9,
+      "speaker": "BB",
+      "section": "peleja",
+      "meter": "sextilha",
+      "line_count": 6,
+      "rhyme_scheme_estimated": "ABCBBB",
+      "end_words": [
+        "sertão",
+        "alegria",
+        "raízes",
+        "poesia",
+        "sabedoria",
+        "sabedoria"
+      ],
+      "lines": [
+        "Já que somos do sertão",
+        "Onde tudo é alegria",
+        "Mostre bem nossas raízes",
+        "Na pegada da poesia",
+        "Entre siga e sabedoria",
+        "Com rima e sabedoria."
+      ]
+    },
+    {
+      "id": 10,
+      "speaker": "AB",
+      "section": "peleja",
+      "meter": "setilha / variação",
+      "line_count": 7,
+      "rhyme_scheme_estimated": "ABCBDDB",
+      "end_words": [
+        "alquimia",
+        "perdido",
+        "inesgotável",
+        "florido",
+        "Conselheiro",
+        "cangaceiro",
+        "mugido"
+      ],
+      "lines": [
+        "O sertão é alquimia",
+        "É útero perdido",
+        "Uma fonte inesgotável",
+        "Um jardim mais que florido",
+        "A pátria de Conselheiro",
+        "O vagar de um cangaceiro",
+        "E do gado o seu mugido."
+      ]
+    },
+    {
+      "id": 11,
+      "speaker": "BB",
+      "section": "peleja",
+      "meter": "setilha / variação",
+      "line_count": 7,
+      "rhyme_scheme_estimated": "ABCDEFG",
+      "end_words": [
+        "ferido",
+        "voar",
+        "estradas",
+        "galopar",
+        "dia",
+        "magia",
+        "sonhar"
+      ],
+      "lines": [
+        "Ver um pássaro ferido",
+        "Muitas léguas por voar",
+        "A poeira nas estradas",
+        "O cavalo a galopar",
+        "O sol acordando o dia",
+        "Noites de toda magia",
+        "E depois poder sonhar."
+      ]
+    },
+    {
+      "id": 12,
+      "speaker": "AB",
+      "section": "peleja",
+      "meter": "setilha / variação",
+      "line_count": 7,
+      "rhyme_scheme_estimated": "ABCBDDB",
+      "end_words": [
+        "lugar",
+        "critérios",
+        "arco-íris",
+        "impérios",
+        "janelas",
+        "cancelas",
+        "mistérios"
+      ],
+      "lines": [
+        "Meu sertão é um lugar",
+        "É um lar com seus critérios",
+        "Tem as cores do arco-íris",
+        "A brandura, os impérios",
+        "Quem ali abre janelas",
+        "E sabe fechar cancelas",
+        "Bebe as gotas de mistérios."
+      ]
+    },
+    {
+      "id": 13,
+      "speaker": "BB",
+      "section": "peleja",
+      "meter": "setilha / variação",
+      "line_count": 7,
+      "rhyme_scheme_estimated": "ABCBDDB",
+      "end_words": [
+        "mistérios",
+        "inspiração",
+        "lobisomem",
+        "arribação",
+        "primavera",
+        "espera",
+        "verão"
+      ],
+      "lines": [
+        "No mundo desses mistérios",
+        "Tudo ali é inspiração",
+        "Caipora, lobisomem",
+        "As aves de arribação",
+        "Os olhos da primavera",
+        "O coração na espera",
+        "A bravura no verão."
+      ]
+    },
+    {
+      "id": 14,
+      "speaker": "AB",
+      "section": "peleja",
+      "meter": "setilha / variação",
+      "line_count": 7,
+      "rhyme_scheme_estimated": "ABCDEEF",
+      "end_words": [
+        "canção",
+        "cio",
+        "raposa",
+        "rio",
+        "horas",
+        "auroras",
+        "frio"
+      ],
+      "lines": [
+        "Um aboio, uma canção",
+        "As borboletas no cio",
+        "Casamento da raposa",
+        "As águas dançam no rio",
+        "O galo tecendo as horas",
+        "E anunciando auroras",
+        "Mesmo nas noites de frio."
+      ]
+    },
+    {
+      "id": 15,
+      "speaker": "BB",
+      "section": "peleja",
+      "meter": "setilha / variação",
+      "line_count": 7,
+      "rhyme_scheme_estimated": "ABCBDEB",
+      "end_words": [
+        "brio",
+        "passado",
+        "matulão",
+        "legado",
+        "'cantarolá'",
+        "cá",
+        "diplomado"
+      ],
+      "lines": [
+        "O sertanejo de brio",
+        "Não esconde o seu passado",
+        "Ele traz no matulão",
+        "Sua cultura, seu legado",
+        "E vive a 'cantarolá'",
+        "Cante lá que eu canto cá",
+        "No sertão fui diplomado..."
+      ]
+    },
+    {
+      "id": 16,
+      "speaker": "AB",
+      "section": "peleja",
+      "meter": "setilha / variação",
+      "line_count": 7,
+      "rhyme_scheme_estimated": "ABCBDEB",
+      "end_words": [
+        "passado",
+        "futuro",
+        "escola",
+        "seguro",
+        "caminhar",
+        "versejar",
+        "maduro"
+      ],
+      "lines": [
+        "O sertão é o meu passado",
+        "Meu presente, meu futuro",
+        "Meu compasso, minha escola",
+        "E também porto seguro",
+        "Hoje vivo a caminhar",
+        "Pela estrada a versejar",
+        "Me sentindo mais maduro."
+      ]
+    },
+    {
+      "id": 17,
+      "speaker": "BB",
+      "section": "peleja",
+      "meter": "setilha / variação",
+      "line_count": 7,
+      "rhyme_scheme_estimated": "ABCBDDB",
+      "end_words": [
+        "seguro",
+        "geografia",
+        "bonito",
+        "sabedoria",
+        "Barretão",
+        "sertão",
+        "Bahia"
+      ],
+      "lines": [
+        "Eu me sinto bem seguro",
+        "Vasculhando a geografia",
+        "Desse meu sertão bonito",
+        "Que nos dá sabedoria",
+        "Mostre agora, Barretão",
+        "As cidades do sertão",
+        "Do Estado da Bahia."
+      ]
+    },
+    {
+      "id": 18,
+      "speaker": "AB",
+      "section": "peleja",
+      "meter": "setilha / variação",
+      "line_count": 7,
+      "rhyme_scheme_estimated": "ABCDEEF",
+      "end_words": [
+        "esqueceria",
+        "Candeal",
+        "Santana",
+        "magistral",
+        "Lamarão",
+        "Riachão",
+        "Real"
+      ],
+      "lines": [
+        "Eu jamais esqueceria",
+        "Santanópolis, Candeal",
+        "Nossa Feira de Santana",
+        "Tão bonita e magistral!",
+        "Água Fria, Lamarão",
+        "Ouriçangas, Riachão",
+        "Biritinga, Rio Real..."
+      ]
+    },
+    {
+      "id": 19,
+      "speaker": "BB",
+      "section": "peleja",
+      "meter": "setilha / variação",
+      "line_count": 7,
+      "rhyme_scheme_estimated": "ABCDEEF",
+      "end_words": [
+        "Pombal",
+        "Ipirá",
+        "Luz",
+        "Ipecaetá",
+        "Heliópolis",
+        "Crisópolis",
+        "lá"
+      ],
+      "lines": [
+        "Em Ribeira do Pombal",
+        "Santo Estevão, Ipirá",
+        "Castro Alves, Santa Luz",
+        "Quijingue, Ipecaetá",
+        "São Gonçalo, Heliópolis",
+        "Teofilândia, Crisópolis",
+        "Eu já versejei por lá!"
+      ]
+    },
+    {
+      "id": 20,
+      "speaker": "AB",
+      "section": "peleja",
+      "meter": "setilha / variação",
+      "line_count": 7,
+      "rhyme_scheme_estimated": "ABCBDDB",
+      "end_words": [
+        "Aporá",
+        "Tanquinho",
+        "Cardoso",
+        "ninho",
+        "Manoel",
+        "Izabel",
+        "carinho"
+      ],
+      "lines": [
+        "Versejei em Aporá",
+        "Serra Preta e Tanquinho",
+        "Fui a Antônio Cardoso",
+        "Sua terra, o seu ninho",
+        "Onde seu pai Manoel",
+        "E sua mãe, Dona Izabel",
+        "Lhe trouxeram com carinho."
+      ]
+    },
+    {
+      "id": 21,
+      "speaker": "BB",
+      "section": "peleja",
+      "meter": "setilha / variação",
+      "line_count": 7,
+      "rhyme_scheme_estimated": "ABCBDDE",
+      "end_words": [
+        "caminho",
+        "sertão",
+        "Bárbara",
+        "grotão",
+        "Serrinha",
+        "Marinha",
+        "ação"
+      ],
+      "lines": [
+        "E prossegue esse caminho",
+        "Pelas sendas do sertão",
+        "Quero ir a Santa Bárbara",
+        "Sua terra, seu grotão",
+        "(Bem pertinho Serrinha)",
+        "Onde Pedro e Marinha",
+        "Te puseram em ação."
+      ]
+    },
+    {
+      "id": 22,
+      "speaker": "AB",
+      "section": "peleja",
+      "meter": "setilha / variação",
+      "line_count": 7,
+      "rhyme_scheme_estimated": "ABCDEED",
+      "end_words": [
+        "sertão",
+        "Sé",
+        "Banzaê",
+        "Caetité",
+        "Grosso",
+        "colosso",
+        "Coité"
+      ],
+      "lines": [
+        "Não esqueço meu sertão",
+        "De Queimadas, Sento Sé",
+        "Itiúba, Banzaê",
+        "Serra Preta, Caetité",
+        "Gavião e Capim Grosso",
+        "Cansanção – é um colosso",
+        "Nova Fátima, Coité..."
+      ]
+    },
+    {
+      "id": 23,
+      "speaker": "BB",
+      "section": "peleja",
+      "meter": "setilha / variação",
+      "line_count": 7,
+      "rhyme_scheme_estimated": "ABCDEED",
+      "end_words": [
+        "fé",
+        "lado",
+        "Nova",
+        "Arcado",
+        "Gabriel",
+        "cordel",
+        "reinado"
+      ],
+      "lines": [
+        "Sobradinho eu faço fé",
+        "Xique-Xique bem ao lado",
+        "Já cantei em Casa Nova",
+        "Remanso, Pilão Arcado",
+        "Irecê, São Gabriel",
+        "Onde repente e cordel",
+        "Tem ali o seu reinado!"
+      ]
+    },
+    {
+      "id": 24,
+      "speaker": "AB",
+      "section": "peleja",
+      "meter": "setilha / variação",
+      "line_count": 7,
+      "rhyme_scheme_estimated": "ABCDEEF",
+      "end_words": [
+        "antenado",
+        "aqui",
+        "Santo",
+        "Araci",
+        "Adustina",
+        "Jacobina",
+        "vivi"
+      ],
+      "lines": [
+        "Eu prossigo antenado",
+        "E não fico por aqui",
+        "Versejei em Monte Santo",
+        "Em Tucano, Araci",
+        "Nova Soure, Adustina...",
+        "Na querida Jacobina",
+        "Coisas boas eu vivi!"
+      ]
+    },
+    {
+      "id": 25,
+      "speaker": "BB",
+      "section": "peleja",
+      "meter": "setilha / variação",
+      "line_count": 7,
+      "rhyme_scheme_estimated": "ABCDEFG",
+      "end_words": [
+        "Aramari",
+        "Irará",
+        "Zé",
+        "lá",
+        "Berimbau",
+        "bacurau",
+        "sabiá"
+      ],
+      "lines": [
+        "Eu adoro Aramari",
+        "E a querida Irará",
+        "A cidade de Tom Zé",
+        "Um filho nobre de lá",
+        "Bem perto tem Berimbau",
+        "Onde canta o bacurau",
+        "O canário e o sabiá!"
+      ]
+    },
+    {
+      "id": 26,
+      "speaker": "AB",
+      "section": "peleja",
+      "meter": "setilha / variação",
+      "line_count": 7,
+      "rhyme_scheme_estimated": "ABCBDEB",
+      "end_words": [
+        "está",
+        "verdadeiro",
+        "Canudos",
+        "Conselheiro",
+        "grão-vizir",
+        "impedir",
+        "inteiro"
+      ],
+      "lines": [
+        "No sertão eu sei que está",
+        "Nosso sonho verdadeiro...",
+        "Sempre volto a Canudos",
+        "Reduto de Conselheiro",
+        "O beato grão-vizir",
+        "Que lutou pra impedir",
+        "A chacina por inteiro."
+      ]
+    },
+    {
+      "id": 27,
+      "speaker": "BB",
+      "section": "peleja",
+      "meter": "setilha / variação",
+      "line_count": 7,
+      "rhyme_scheme_estimated": "ABCBDEB",
+      "end_words": [
+        "Juazeiro",
+        "certo",
+        "mundo",
+        "Gilberto",
+        "rio",
+        "brio",
+        "boquiaberto"
+      ],
+      "lines": [
+        "Saudade de Juazeiro",
+        "O meu paradeiro certo",
+        "Foi ali que veio ao mundo",
+        "Nosso mestre João Gilberto",
+        "No vale do grande rio",
+        "O São Francisco de brio",
+        "Que nos deixa boquiaberto!"
+      ]
+    },
+    {
+      "id": 28,
+      "speaker": "AB",
+      "section": "peleja",
+      "meter": "setilha / variação",
+      "line_count": 7,
+      "rhyme_scheme_estimated": "ABCBDEB",
+      "end_words": [
+        "completo",
+        "solidão",
+        "Esplanada",
+        "Pedrão",
+        "Ituaçu",
+        "Ichu",
+        "coração"
+      ],
+      "lines": [
+        "No sertão estou completo",
+        "Não tem dor nem solidão...",
+        "Na memória: Esplanada",
+        "Alagoinhas, Pedrão",
+        "Paulo Afonso, Ituaçu",
+        "Euclides da Cunha, Ichu",
+        "Dentro do meu coração."
+      ]
+    },
+    {
+      "id": 29,
+      "speaker": "BB",
+      "section": "peleja",
+      "meter": "sextilha",
+      "line_count": 6,
+      "rhyme_scheme_estimated": "ABCBDE",
+      "end_words": [
+        "sertão",
+        "magia",
+        "inteira",
+        "cantoria",
+        "Novo",
+        "Maria"
+      ],
+      "lines": [
+        "Percorrendo esse sertão",
+        "De beleza e de magia",
+        "Vai ser verso a noite inteira",
+        "Nessa nossa cantoria!",
+        "Não esqueço Mundo Novo",
+        "E Coração de Maria!"
+      ]
+    },
+    {
+      "id": 30,
+      "speaker": "AB",
+      "section": "peleja",
+      "meter": "setilha / variação",
+      "line_count": 7,
+      "rhyme_scheme_estimated": "ABCBDEB",
+      "end_words": [
+        "alegria",
+        "gente",
+        "Piritiba",
+        "Valente",
+        "Ibitiara",
+        "chama",
+        "repente"
+      ],
+      "lines": [
+        "É motivo de alegria",
+        "Falar do sertão da gente:",
+        "Livramento, Piritiba",
+        "Morro do Chapéu, Valente",
+        "Maceté, Ibitiara...",
+        "Senhor do Bonfim nos chama",
+        "Para cantar um bom repente."
+      ]
+    },
+    {
+      "id": 31,
+      "speaker": "BB",
+      "section": "peleja",
+      "meter": "setilha / variação",
+      "line_count": 7,
+      "rhyme_scheme_estimated": "ABCDEFB",
+      "end_words": [
+        "gente",
+        "Brumado",
+        "Dantas",
+        "lado",
+        "Curaçá",
+        "lá",
+        "improvisado"
+      ],
+      "lines": [
+        "Jeremoabo é da gente",
+        "Jorro, Antas e Brumado",
+        "Mairi, Cícero Dantas",
+        "Barrocas do nosso lado...",
+        "A Cipó e a Curaçá",
+        "Brevemente vamos lá",
+        "Cantar verso improvisado..."
+      ]
+    },
+    {
+      "id": 32,
+      "speaker": "NARRADOR",
+      "section": "transicao",
+      "meter": "oito pés a quadrão",
+      "line_count": 6,
+      "rhyme_scheme_estimated": "ABCBDB",
+      "end_words": [
+        "Matos",
+        "sugestão",
+        "pediu",
+        "satisfação",
+        "improvisasse",
+        "quadrão"
+      ],
+      "lines": [
+        "Veio de Edilene Matos",
+        "Uma boa sugestão",
+        "Da plateia ela pediu",
+        "Com muita satisfação",
+        "Que a dupla improvisasse",
+        "Nos oito pés a quadrão."
+      ]
+    },
+    {
+      "id": 33,
+      "speaker": "AB",
+      "section": "oito_pes_a_quadrao",
+      "meter": "oito pés a quadrão",
+      "line_count": 8,
+      "rhyme_scheme_estimated": "AAABBCCB",
+      "end_words": [
+        "passado",
+        "rabiscado",
+        "anotado",
+        "encarnação",
+        "Salomão",
+        "autoridade",
+        "verdade",
+        "quadrão"
+      ],
+      "lines": [
+        "Meu caderno do passado",
+        "Continua rabiscado",
+        "Tudo ali está anotado",
+        "De uma outra encarnação...",
+        "Quem falou foi Salomão",
+        "Com bastante autoridade",
+        "Acredite que é verdade",
+        "Nos oito pés a quadrão."
+      ]
+    },
+    {
+      "id": 34,
+      "speaker": "BB",
+      "section": "oito_pes_a_quadrao",
+      "meter": "oito pés a quadrão",
+      "line_count": 8,
+      "rhyme_scheme_estimated": "AAABBCCB",
+      "end_words": [
+        "verdade",
+        "bondade",
+        "liberdade",
+        "encantação",
+        "direção",
+        "utopia",
+        "alegria",
+        "quadrão"
+      ],
+      "lines": [
+        "Meu caderno da verdade",
+        "É repleto de bondade",
+        "Tem versos de liberdade",
+        "Tem a paz, encantação",
+        "Nunca vai na direção",
+        "Da estrada da utopia",
+        "Mantém viva a alegria",
+        "Nos oito pés a quadrão."
+      ]
+    },
+    {
+      "id": 35,
+      "speaker": "AB",
+      "section": "oito_pes_a_quadrao",
+      "meter": "oito pés a quadrão",
+      "line_count": 8,
+      "rhyme_scheme_estimated": "AAABBCCB",
+      "end_words": [
+        "sabia",
+        "nostalgia",
+        "sofreria",
+        "sertão",
+        "imensidão",
+        "natureza",
+        "singeleza",
+        "quadrão"
+      ],
+      "lines": [
+        "Meu caderno já sabia",
+        "Das dores, da nostalgia",
+        "De tudo que sofreria",
+        "O menino do sertão",
+        "Que naquela imensidão",
+        "Contemplava a natureza",
+        "E abraçava a singeleza",
+        "Nos oito pés a quadrão."
+      ]
+    },
+    {
+      "id": 36,
+      "speaker": "BB",
+      "section": "oito_pes_a_quadrao",
+      "meter": "oito pés a quadrão",
+      "line_count": 8,
+      "rhyme_scheme_estimated": "ABBCDEED",
+      "end_words": [
+        "surpresa",
+        "beleza",
+        "firmeza",
+        "Adão",
+        "oração",
+        "Era",
+        "primavera",
+        "quadrão"
+      ],
+      "lines": [
+        "Meu caderno tem surpresa",
+        "Tem magia, tem beleza",
+        "Tem as cores da firmeza",
+        "Desde os tempos de Adão",
+        "Meu caderno é oração",
+        "O canto da Nova Era",
+        "A sombra da primavera",
+        "Nos oito pés a quadrão."
+      ]
+    },
+    {
+      "id": 37,
+      "speaker": "AB",
+      "section": "oito_pes_a_quadrao",
+      "meter": "oito pés a quadrão",
+      "line_count": 8,
+      "rhyme_scheme_estimated": "AAABBCCB",
+      "end_words": [
+        "esfera",
+        "espera",
+        "quimera",
+        "anotação",
+        "coração",
+        "rasgá-lo",
+        "doá-lo",
+        "quadrão"
+      ],
+      "lines": [
+        "Meu caderno é uma esfera",
+        "Paciência, muita espera",
+        "Não é sonho de quimera",
+        "Ele tem anotação",
+        "Das notas do coração",
+        "Por isso não vou rasgá-lo",
+        "Mas quem sabe vou doá-lo",
+        "Nos oito pés a quadrão."
+      ]
+    },
+    {
+      "id": 38,
+      "speaker": "BB",
+      "section": "oito_pes_a_quadrao",
+      "meter": "oito pés a quadrão",
+      "line_count": 8,
+      "rhyme_scheme_estimated": "AABCCDDC",
+      "end_words": [
+        "guardá-lo",
+        "doá-lo",
+        "falo",
+        "coração",
+        "sertão",
+        "destino",
+        "menino",
+        "quadrão"
+      ],
+      "lines": [
+        "Meu caderno vou guardá-lo",
+        "Mas também posso doá-lo",
+        "E pra todo o mundo eu falo",
+        "Do fundo do coração:",
+        "Quem nasceu lá no sertão",
+        "No galope do destino",
+        "Não deixa de ser menino",
+        "Nos oito pés a quadrão."
+      ]
+    },
+    {
+      "id": 39,
+      "speaker": "NARRADOR",
+      "section": "transicao",
+      "meter": "sextilha",
+      "line_count": 6,
+      "rhyme_scheme_estimated": "ABCBDB",
+      "end_words": [
+        "poetas",
+        "alegria",
+        "importava",
+        "cantoria",
+        "estavam",
+        "poesia"
+      ],
+      "lines": [
+        "O canto dos dois poetas",
+        "Era luz e alegria",
+        "Agora não importava",
+        "O rigor da cantoria",
+        "Pois ali todos estavam",
+        "Sedentos de poesia."
+      ]
+    },
+    {
+      "id": 40,
+      "speaker": "NARRADOR",
+      "section": "transicao",
+      "meter": "sextilha",
+      "line_count": 6,
+      "rhyme_scheme_estimated": "ABCBDB",
+      "end_words": [
+        "pronto",
+        "cadeira",
+        "sugerindo",
+        "brincadeira",
+        "versejassem",
+        "Limeira"
+      ],
+      "lines": [
+        "Franklin Maxado, de pronto",
+        "Levantou-se da cadeira",
+        "E foi logo sugerindo",
+        "Quase em tom de brincadeira",
+        "Que os poetas versejassem",
+        "Do jeito de Zé Limeira!"
+      ]
+    },
+    {
+      "id": 41,
+      "speaker": "AB",
+      "section": "ze_limeira",
+      "meter": "décima (estilo Zé Limeira)",
+      "line_count": 10,
+      "rhyme_scheme_estimated": "ABCDDEEFFE",
+      "end_words": [
+        "encontrou",
+        "Tejo",
+        "brejo",
+        "ausentou",
+        "perguntou",
+        "profissão",
+        "Artesão",
+        "absurdo",
+        "curdo",
+        "ficção"
+      ],
+      "lines": [
+        "Zé Limeira encontrou",
+        "Com o mestre Orlando Tejo",
+        "Bem pertinho de um brejo",
+        "Quando o sol se ausentou",
+        "O Limeira perguntou:",
+        "- Qual a sua profissão?",
+        "Tejo disse: Artesão",
+        "De versos do absurdo,",
+        "Sou paraibano curdo",
+        "Inventor da ficção!"
+      ]
+    },
+    {
+      "id": 42,
+      "speaker": "BB",
+      "section": "ze_limeira",
+      "meter": "décima (estilo Zé Limeira)",
+      "line_count": 10,
+      "rhyme_scheme_estimated": "ABBAACDEEF",
+      "end_words": [
+        "Lampião",
+        "presidente",
+        "dente",
+        "Jaboatão",
+        "Damião",
+        "Maracanã",
+        "Teerã",
+        "Inglaterra",
+        "guerra",
+        "maçã"
+      ],
+      "lines": [
+        "Quando o pai de Lampião",
+        "Resolveu ser presidente",
+        "Inventou de arrancar dente",
+        "Perto de Jaboatão",
+        "Foi quando Frei Damião",
+        "Construiu o Maracanã",
+        "E fugiu para Teerã",
+        "Capital da Inglaterra",
+        "Daí começou a guerra",
+        "Entre Eva e a maçã."
+      ]
+    },
+    {
+      "id": 43,
+      "speaker": "AB",
+      "section": "ze_limeira",
+      "meter": "décima (estilo Zé Limeira)",
+      "line_count": 10,
+      "rhyme_scheme_estimated": "ABCDEFFGGF",
+      "end_words": [
+        "divã",
+        "Goulart",
+        "mar",
+        "romã",
+        "van",
+        "sertão",
+        "Lampião",
+        "Senado",
+        "Brumado",
+        "Afeganistão"
+      ],
+      "lines": [
+        "Tiradentes num divã",
+        "Disse para João Goulart:",
+        "Os bodes que são do mar",
+        "Comem doce de romã",
+        "Se entocam numa van",
+        "E se mandam pro sertão",
+        "Pra falar com Lampião",
+        "Presidente do Senado",
+        "Que nasceu lá em Brumado",
+        "Perto do Afeganistão."
+      ]
+    },
+    {
+      "id": 44,
+      "speaker": "BB",
+      "section": "ze_limeira",
+      "meter": "décima (estilo Zé Limeira)",
+      "line_count": 10,
+      "rhyme_scheme_estimated": "ABBAACDEFG",
+      "end_words": [
+        "Paquistão",
+        "cavalo",
+        "vassalo",
+        "Sansão",
+        "paixão",
+        "Lisboa",
+        "patroa",
+        "Teseu",
+        "deu",
+        "leitoa"
+      ],
+      "lines": [
+        "Quando fui ao Paquistão",
+        "Montado no meu cavalo",
+        "Encontrei com um vassalo",
+        "Cujo nome era Sansão",
+        "Dalila, sua paixão",
+        "Foi fazer vida em Lisboa",
+        "Eu falei: minha patroa",
+        "O meu nome é Teseu",
+        "Nessa hora ela me deu",
+        "Uma vaca e uma leitoa."
+      ]
+    },
+    {
+      "id": 45,
+      "speaker": "AB",
+      "section": "ze_limeira",
+      "meter": "décima (estilo Zé Limeira)",
+      "line_count": 10,
+      "rhyme_scheme_estimated": "ABBACDDEFD",
+      "end_words": [
+        "Lisboa",
+        "atolado",
+        "Amado",
+        "boa",
+        "canoa",
+        "Barcelona",
+        "Maradona",
+        "Pelé",
+        "fé",
+        "Dipirona"
+      ],
+      "lines": [
+        "Numa rua de Lisboa",
+        "Meu carro ficou atolado",
+        "Encontrei com Jorge Amado",
+        "Relaxado numa boa",
+        "Montado numa canoa",
+        "Indo para Barcelona...",
+        "Ao seu lado Maradona",
+        "Se passando por Pelé",
+        "Eu falei: não perca a fé",
+        "Tome mais um Dipirona."
+      ]
+    },
+    {
+      "id": 46,
+      "speaker": "BB",
+      "section": "ze_limeira",
+      "meter": "décima (estilo Zé Limeira)",
+      "line_count": 10,
+      "rhyme_scheme_estimated": "ABBAACCDEC",
+      "end_words": [
+        "Maradona",
+        "Platão",
+        "Plutão",
+        "Pamplona",
+        "ricona",
+        "coado",
+        "adoçado",
+        "gambá",
+        "tamanduá",
+        "registrado"
+      ],
+      "lines": [
+        "O irmão de Maradona",
+        "Foi padrinho de Platão",
+        "Que saiu lá de Plutão",
+        "Pra morar lá em Pamplona",
+        "Onde tem mulher ricona",
+        "Fazendo café coado",
+        "E biscoito adoçado",
+        "Com melaço de gambá",
+        "Leite de tamanduá",
+        "Made in USA registrado."
+      ]
+    },
+    {
+      "id": 47,
+      "speaker": "AB",
+      "section": "ze_limeira",
+      "meter": "décima (estilo Zé Limeira)",
+      "line_count": 10,
+      "rhyme_scheme_estimated": "ABCAADEFGH",
+      "end_words": [
+        "pesado",
+        "casa",
+        "asa",
+        "espatifado",
+        "soterrado",
+        "pariu",
+        "pediu",
+        "nascer",
+        "morrer",
+        "subiu"
+      ],
+      "lines": [
+        "Um meteoro pesado",
+        "Caiu em cima da casa",
+        "Um porco ficou sem asa",
+        "Um carneiro espatifado",
+        "O porco foi soterrado",
+        "A galinha então pariu",
+        "A raposa me pediu",
+        "Para ver o sol nascer",
+        "Na hora que eu ia morrer",
+        "O meteoro subiu."
+      ]
+    },
+    {
+      "id": 48,
+      "speaker": "BB",
+      "section": "ze_limeira",
+      "meter": "décima (estilo Zé Limeira)",
+      "line_count": 10,
+      "rhyme_scheme_estimated": "ABCDDEFGHI",
+      "end_words": [
+        "sumiu",
+        "Bahia",
+        "feitiçaria",
+        "manca",
+        "desbanca",
+        "Alcatraz",
+        "Tomaz",
+        "você",
+        "dendê",
+        "Vaz"
+      ],
+      "lines": [
+        "Cabeça Branca sumiu",
+        "Do império da Bahia",
+        "Fez uma feitiçaria",
+        "Montou numa mula manca",
+        "E disse: ninguém desbanca",
+        "O chefão de Alcatraz",
+        "Eu castrei o Pai Tomaz",
+        "Agora castro você",
+        "Meu feitiço de dendê",
+        "Quem roubou foi Pero Vaz."
+      ]
+    },
+    {
+      "id": 49,
+      "speaker": "NARRADOR",
+      "section": "transicao",
+      "meter": "martelo agalopado",
+      "line_count": 6,
+      "rhyme_scheme_estimated": "ABCBDB",
+      "end_words": [
+        "parede",
+        "estrelado",
+        "plateia",
+        "animado",
+        "cantadores",
+        "agalopado"
+      ],
+      "lines": [
+        "Naquele pé de parede",
+        "Com o céu bem estrelado",
+        "Jotacê, lá da plateia",
+        "Como sempre animado",
+        "Pediu para os cantadores",
+        "Um martelo agalopado."
+      ]
+    },
+    {
+      "id": 50,
+      "speaker": "AB",
+      "section": "martelo_agalopado",
+      "meter": "martelo agalopado",
+      "line_count": 10,
+      "rhyme_scheme_estimated": "ABBAACDEEC",
+      "end_words": [
+        "camarada",
+        "irmão",
+        "sertão",
+        "estrada",
+        "caminhada",
+        "tem",
+        "além",
+        "grandeza",
+        "certeza",
+        "mantém"
+      ],
+      "lines": [
+        "Bule-Bule é um grande camarada",
+        "É amigo, meu mestre e bom irmão",
+        "O casulo da gente é o sertão",
+        "O descanso eu sei: é na estrada.",
+        "Admiro sua bela caminhada",
+        "De idade setenta você tem",
+        "De cultura e arte vai além",
+        "São 50 vividos com grandeza",
+        "No martelo eu digo com certeza",
+        "Que você lá no trono se mantém!"
+      ]
+    },
+    {
+      "id": 51,
+      "speaker": "BB",
+      "section": "martelo_agalopado",
+      "meter": "martelo agalopado",
+      "line_count": 10,
+      "rhyme_scheme_estimated": "ABBCDEEFFG",
+      "end_words": [
+        "bem",
+        "cordel",
+        "carrossel",
+        "além",
+        "tem",
+        "agalopado",
+        "aprovado",
+        "talento",
+        "acanhamento",
+        "lado"
+      ],
+      "lines": [
+        "Barretão, a você eu quero bem",
+        "E aprovo os seus versos de cordel",
+        "Siga firme em seu belo carrossel",
+        "Versejando e buscando ir além",
+        "Que talento eu sei que você tem",
+        "Digo aqui no martelo agalopado",
+        "Que você nessa arte está aprovado",
+        "Vá em frente mostrando seu talento",
+        "Seja humilde e não tenha acanhamento",
+        "Que o sucesso estará sempre ao seu lado."
+      ]
+    },
+    {
+      "id": 52,
+      "speaker": "AB",
+      "section": "martelo_agalopado",
+      "meter": "martelo agalopado",
+      "line_count": 10,
+      "rhyme_scheme_estimated": "ABCAADEFFD",
+      "end_words": [
+        "animado",
+        "aprendiz",
+        "feliz",
+        "sossegado",
+        "aprendizado",
+        "pincel",
+        "fiel",
+        "alegria",
+        "parceria",
+        "menestrel"
+      ],
+      "lines": [
+        "O seu gesto me deixa animado",
+        "Nessa senda de ser um aprendiz",
+        "Sendo assim eu me sinto bem feliz",
+        "Vou seguir versejando sossegado",
+        "Prometendo honrar o aprendizado",
+        "E mover com grandeza o meu pincel",
+        "No meu verso eu prometo ser fiel",
+        "Semeando amizade e alegria",
+        "Sou-lhe grato por essa parceria",
+        "A você, meu querido menestrel."
+      ]
+    },
+    {
+      "id": 53,
+      "speaker": "BB",
+      "section": "dez_de_galope",
+      "meter": "dez de galope",
+      "line_count": 10,
+      "rhyme_scheme_estimated": "ABBAACDEFG",
+      "end_words": [
+        "vento",
+        "clarão",
+        "cordão",
+        "pensamento",
+        "momento",
+        "louvar",
+        "popular",
+        "rima",
+        "obra-prima",
+        "mar"
+      ],
+      "lines": [
+        "Eu sou Bule-Bule nas asas do vento",
+        "O sol me ilumina, é vasto o clarão...",
+        "Na minha miragem, a palavra cordão",
+        "Que não se separa do meu pensamento.",
+        "Um anjo me diz: é chegado o momento,",
+        "Avante poeta que vamos louvar",
+        "O nosso cordel, expressão popular",
+        "De tanta grandeza na métrica, na rima...",
+        "É arte, é vida, também obra-prima",
+        "Nos dez de galope na beira do mar."
+      ]
+    },
+    {
+      "id": 54,
+      "speaker": "AB",
+      "section": "dez_de_galope",
+      "meter": "dez de galope",
+      "line_count": 10,
+      "rhyme_scheme_estimated": "ABCDDEFGGH",
+      "end_words": [
+        "rima",
+        "sol",
+        "arrebol",
+        "lastima",
+        "desanima",
+        "apertar",
+        "encontrar",
+        "alegria",
+        "poesia",
+        "mar"
+      ],
+      "lines": [
+        "Meu nome é Barreto, me banho de rima",
+        "Sou filho da lua, do vento, do sol",
+        "Do fogo, da terra, da luz do arrebol",
+        "Sou anjo-menino que não se lastima",
+        "Matuto valente que não desanima",
+        "A mão da verdade eu quero apertar",
+        "A chave do amor eu preciso encontrar.",
+        "No risco, no choro, na dor, na alegria",
+        "Jamais me separo da mãe poesia",
+        "Nos dez de galope na beira do mar."
+      ]
+    },
+    {
+      "id": 55,
+      "speaker": "BB",
+      "section": "dez_de_galope",
+      "meter": "dez de galope",
+      "line_count": 10,
+      "rhyme_scheme_estimated": "ABBACDEFFG",
+      "end_words": [
+        "poesia",
+        "versando",
+        "chegando",
+        "harmonia",
+        "dia",
+        "falar",
+        "poetizar",
+        "gente",
+        "repente",
+        "mar"
+      ],
+      "lines": [
+        "Aqui na viola é só poesia",
+        "As coisas do mundo estamos versando",
+        "Com muito lirismo os versos chegando",
+        "A noite se finda com muita harmonia",
+        "As horas se passam, já vem outro dia",
+        "A lua tão bela só falta falar",
+        "Sou eu e Barreto a poetizar",
+        "O povo sorrindo, gostando da gente",
+        "E a musa inspirando o nosso repente",
+        "Nos dez de galope na beira do mar..."
+      ]
+    },
+    {
+      "id": 56,
+      "speaker": "NARRADOR",
+      "section": "encerramento",
+      "meter": "sextilha",
+      "line_count": 6,
+      "rhyme_scheme_estimated": "ABCBDB",
+      "end_words": [
+        "terminou",
+        "alegria",
+        "Bule-Bule",
+        "sabedoria",
+        "estranhamento",
+        "poesia"
+      ],
+      "lines": [
+        "A peleja terminou",
+        "Em clima de alegria",
+        "Pois Barreto e Bule-Bule",
+        "Tiveram a sabedoria",
+        "De evitar estranhamento",
+        "Dando voz à poesia!"
+      ]
+    }
+  ],
+  "rhyme_bank": {
+    "BB": {
+      "total_line_endings": 182,
+      "unique_line_endings": [
+        "acanhamento",
+        "acao",
+        "adao",
+        "adocado",
+        "afinada",
+        "agalopado",
+        "alcatraz",
+        "alegria",
+        "alem",
+        "aprovado",
+        "aramari",
+        "arcado",
+        "arribacao",
+        "bacurau",
+        "bahia",
+        "barbara",
+        "barretao",
+        "barreto",
+        "beleza",
+        "bem",
+        "berimbau",
+        "bondade",
+        "bonito",
+        "boquiaberto",
+        "brio",
+        "brumado",
+        "ca",
+        "caminho",
+        "cantarola",
+        "cantoria",
+        "cardoso",
+        "carrossel",
+        "cavalo",
+        "certo",
+        "chegando",
+        "clarao",
+        "coado",
+        "coracao",
+        "cordao",
+        "cordel",
+        "crisopolis",
+        "curaca",
+        "damiao",
+        "dantas",
+        "dende",
+        "dente",
+        "desbanca",
+        "destino",
+        "deu",
+        "dia",
+        "diplomado",
+        "direcao",
+        "doa-lo",
+        "encantacao",
+        "era",
+        "espera",
+        "estradas",
+        "falar",
+        "falo",
+        "fe",
+        "feiticaria",
+        "ferido",
+        "firmeza",
+        "gabriel",
+        "galopar",
+        "gamba",
+        "gente",
+        "geografia",
+        "gilberto",
+        "grotao",
+        "guarda-lo",
+        "guerra",
+        "harmonia",
+        "heliopolis",
+        "improvisado",
+        "inglaterra",
+        "inspiracao",
+        "inteira",
+        "ipecaeta",
+        "ipira",
+        "irara",
+        "jaboatao",
+        "juazeiro",
+        "la",
+        "lado",
+        "lampiao",
+        "legado",
+        "leitoa",
+        "liberdade",
+        "lisboa",
+        "lobisomem",
+        "louvar",
+        "luz",
+        "maca",
+        "magia",
+        "manca",
+        "mar",
+        "maracana",
+        "maradona",
+        "maria",
+        "marinha",
+        "matulao",
+        "menino",
+        "misterios",
+        "momento",
+        "mundo",
+        "nova",
+        "novo",
+        "obra-prima",
+        "oracao",
+        "paixao",
+        "pamplona",
+        "pancada",
+        "paquistao",
+        "parada",
+        "passado",
+        "patroa",
+        "pensamento",
+        "platao",
+        "plutao",
+        "poesia",
+        "poetizar",
+        "pombal",
+        "popular",
+        "preparar",
+        "presidente",
+        "primavera",
+        "quadrao",
+        "raizes",
+        "registrado",
+        "reinado",
+        "repente",
+        "ricona",
+        "rima",
+        "rio",
+        "sabedoria",
+        "sabia",
+        "sansao",
+        "seguro",
+        "serrinha",
+        "sertao",
+        "sonhar",
+        "sumiu",
+        "surpresa",
+        "talento",
+        "tamandua",
+        "teera",
+        "tem",
+        "teseu",
+        "tomaz",
+        "utopia",
+        "vassalo",
+        "vaz",
+        "vento",
+        "verao",
+        "verdade",
+        "versando",
+        "voar",
+        "voce",
+        "ze"
+      ],
+      "clusters": [
+        {
+          "rhyme_key": "ao",
+          "frequency": 28,
+          "unique_words": [
+            "sertão",
+            "inspiração",
+            "arribação",
+            "verão",
+            "matulão",
+            "Barretão",
+            "grotão",
+            "encantação",
+            "direção",
+            "quadrão",
+            "oração",
+            "coração",
+            "Lampião",
+            "Jaboatão",
+            "Damião",
+            "Paquistão",
+            "Sansão",
+            "paixão",
+            "Platão",
+            "Plutão",
+            "clarão",
+            "cordão"
+          ]
+        },
+        {
+          "rhyme_key": "ia",
+          "frequency": 16,
+          "unique_words": [
+            "alegria",
+            "poesia",
+            "sabedoria",
+            "magia",
+            "geografia",
+            "Bahia",
+            "sabiá",
+            "cantoria",
+            "utopia",
+            "harmonia"
+          ]
+        },
+        {
+          "rhyme_key": "ado",
+          "frequency": 12,
+          "unique_words": [
+            "passado",
+            "legado",
+            "diplomado",
+            "Arcado",
+            "reinado",
+            "Brumado",
+            "improvisado",
+            "coado",
+            "adoçado",
+            "registrado",
+            "agalopado",
+            "aprovado"
+          ]
+        },
+        {
+          "rhyme_key": "era",
+          "frequency": 5,
+          "unique_words": [
+            "primavera",
+            "espera",
+            "Era",
+            "Teerã"
+          ]
+        },
+        {
+          "rhyme_key": "nte",
+          "frequency": 5,
+          "unique_words": [
+            "gente",
+            "presidente",
+            "dente",
+            "repente"
+          ]
+        },
+        {
+          "rhyme_key": "nto",
+          "frequency": 5,
+          "unique_words": [
+            "talento",
+            "acanhamento",
+            "vento",
+            "pensamento",
+            "momento"
+          ]
+        },
+        {
+          "rhyme_key": "el",
+          "frequency": 4,
+          "unique_words": [
+            "Gabriel",
+            "cordel",
+            "carrossel"
+          ]
+        },
+        {
+          "rhyme_key": "ada",
+          "frequency": 3,
+          "unique_words": [
+            "afinada",
+            "parada",
+            "pancada"
+          ]
+        },
+        {
+          "rhyme_key": "ade",
+          "frequency": 3,
+          "unique_words": [
+            "verdade",
+            "bondade",
+            "liberdade"
+          ]
+        },
+        {
+          "rhyme_key": "la",
+          "frequency": 3,
+          "unique_words": [
+            "lá"
+          ]
+        },
+        {
+          "rhyme_key": "lado",
+          "frequency": 3,
+          "unique_words": [
+            "lado"
+          ]
+        },
+        {
+          "rhyme_key": "ndo",
+          "frequency": 3,
+          "unique_words": [
+            "mundo",
+            "versando",
+            "chegando"
+          ]
+        },
+        {
+          "rhyme_key": "ona",
+          "frequency": 3,
+          "unique_words": [
+            "Maradona",
+            "Pamplona",
+            "ricona"
+          ]
+        },
+        {
+          "rhyme_key": "rto",
+          "frequency": 3,
+          "unique_words": [
+            "certo",
+            "Gilberto",
+            "boquiaberto"
+          ]
+        },
+        {
+          "rhyme_key": "-lo",
+          "frequency": 2,
+          "unique_words": [
+            "guardá-lo",
+            "doá-lo"
+          ]
+        },
+        {
+          "rhyme_key": "alo",
+          "frequency": 2,
+          "unique_words": [
+            "cavalo",
+            "vassalo"
+          ]
+        },
+        {
+          "rhyme_key": "ara",
+          "frequency": 2,
+          "unique_words": [
+            "Bárbara",
+            "Irará"
+          ]
+        },
+        {
+          "rhyme_key": "aria",
+          "frequency": 2,
+          "unique_words": [
+            "Maria",
+            "feitiçaria"
+          ]
+        },
+        {
+          "rhyme_key": "brio",
+          "frequency": 2,
+          "unique_words": [
+            "brio"
+          ]
+        },
+        {
+          "rhyme_key": "dia",
+          "frequency": 2,
+          "unique_words": [
+            "dia"
+          ]
+        },
+        {
+          "rhyme_key": "eza",
+          "frequency": 2,
+          "unique_words": [
+            "beleza",
+            "firmeza"
+          ]
+        },
+        {
+          "rhyme_key": "ino",
+          "frequency": 2,
+          "unique_words": [
+            "destino",
+            "menino"
+          ]
+        },
+        {
+          "rhyme_key": "lar",
+          "frequency": 2,
+          "unique_words": [
+            "popular",
+            "falar"
+          ]
+        },
+        {
+          "rhyme_key": "lis",
+          "frequency": 2,
+          "unique_words": [
+            "Heliópolis",
+            "Crisópolis"
+          ]
+        },
+        {
+          "rhyme_key": "mar",
+          "frequency": 2,
+          "unique_words": [
+            "mar"
+          ]
+        },
+        {
+          "rhyme_key": "nca",
+          "frequency": 2,
+          "unique_words": [
+            "manca",
+            "desbanca"
+          ]
+        },
+        {
+          "rhyme_key": "nha",
+          "frequency": 2,
+          "unique_words": [
+            "Serrinha",
+            "Marinha"
+          ]
+        },
+        {
+          "rhyme_key": "rra",
+          "frequency": 2,
+          "unique_words": [
+            "Inglaterra",
+            "guerra"
+          ]
+        },
+        {
+          "rhyme_key": "aca",
+          "frequency": 1,
+          "unique_words": [
+            "Curaçá"
+          ]
+        },
+        {
+          "rhyme_key": "acao",
+          "frequency": 1,
+          "unique_words": [
+            "ação"
+          ]
+        },
+        {
+          "rhyme_key": "adao",
+          "frequency": 1,
+          "unique_words": [
+            "Adão"
+          ]
+        },
+        {
+          "rhyme_key": "alem",
+          "frequency": 1,
+          "unique_words": [
+            "além"
+          ]
+        },
+        {
+          "rhyme_key": "ana",
+          "frequency": 1,
+          "unique_words": [
+            "Maracanã"
+          ]
+        },
+        {
+          "rhyme_key": "ari",
+          "frequency": 1,
+          "unique_words": [
+            "Aramari"
+          ]
+        },
+        {
+          "rhyme_key": "bal",
+          "frequency": 1,
+          "unique_words": [
+            "Pombal"
+          ]
+        },
+        {
+          "rhyme_key": "bau",
+          "frequency": 1,
+          "unique_words": [
+            "Berimbau"
+          ]
+        },
+        {
+          "rhyme_key": "bem",
+          "frequency": 1,
+          "unique_words": [
+            "bem"
+          ]
+        },
+        {
+          "rhyme_key": "boa",
+          "frequency": 1,
+          "unique_words": [
+            "Lisboa"
+          ]
+        },
+        {
+          "rhyme_key": "ca",
+          "frequency": 1,
+          "unique_words": [
+            "cá"
+          ]
+        },
+        {
+          "rhyme_key": "das",
+          "frequency": 1,
+          "unique_words": [
+            "estradas"
+          ]
+        },
+        {
+          "rhyme_key": "deu",
+          "frequency": 1,
+          "unique_words": [
+            "deu"
+          ]
+        },
+        {
+          "rhyme_key": "dua",
+          "frequency": 1,
+          "unique_words": [
+            "tamanduá"
+          ]
+        },
+        {
+          "rhyme_key": "eira",
+          "frequency": 1,
+          "unique_words": [
+            "inteira"
+          ]
+        },
+        {
+          "rhyme_key": "esa",
+          "frequency": 1,
+          "unique_words": [
+            "surpresa"
+          ]
+        },
+        {
+          "rhyme_key": "eta",
+          "frequency": 1,
+          "unique_words": [
+            "Ipecaetá"
+          ]
+        },
+        {
+          "rhyme_key": "eto",
+          "frequency": 1,
+          "unique_words": [
+            "Barreto"
+          ]
+        },
+        {
+          "rhyme_key": "falo",
+          "frequency": 1,
+          "unique_words": [
+            "falo"
+          ]
+        },
+        {
+          "rhyme_key": "fe",
+          "frequency": 1,
+          "unique_words": [
+            "fé"
+          ]
+        },
+        {
+          "rhyme_key": "har",
+          "frequency": 1,
+          "unique_words": [
+            "sonhar"
+          ]
+        },
+        {
+          "rhyme_key": "ido",
+          "frequency": 1,
+          "unique_words": [
+            "ferido"
+          ]
+        },
+        {
+          "rhyme_key": "ima",
+          "frequency": 1,
+          "unique_words": [
+            "obra-prima"
+          ]
+        },
+        {
+          "rhyme_key": "ios",
+          "frequency": 1,
+          "unique_words": [
+            "mistérios"
+          ]
+        },
+        {
+          "rhyme_key": "ira",
+          "frequency": 1,
+          "unique_words": [
+            "Ipirá"
+          ]
+        },
+        {
+          "rhyme_key": "iro",
+          "frequency": 1,
+          "unique_words": [
+            "Juazeiro"
+          ]
+        },
+        {
+          "rhyme_key": "ito",
+          "frequency": 1,
+          "unique_words": [
+            "bonito"
+          ]
+        },
+        {
+          "rhyme_key": "luz",
+          "frequency": 1,
+          "unique_words": [
+            "Luz"
+          ]
+        },
+        {
+          "rhyme_key": "maca",
+          "frequency": 1,
+          "unique_words": [
+            "maçã"
+          ]
+        },
+        {
+          "rhyme_key": "maz",
+          "frequency": 1,
+          "unique_words": [
+            "Tomaz"
+          ]
+        },
+        {
+          "rhyme_key": "mba",
+          "frequency": 1,
+          "unique_words": [
+            "gambá"
+          ]
+        },
+        {
+          "rhyme_key": "mem",
+          "frequency": 1,
+          "unique_words": [
+            "lobisomem"
+          ]
+        },
+        {
+          "rhyme_key": "miu",
+          "frequency": 1,
+          "unique_words": [
+            "sumiu"
+          ]
+        },
+        {
+          "rhyme_key": "nde",
+          "frequency": 1,
+          "unique_words": [
+            "dendê"
+          ]
+        },
+        {
+          "rhyme_key": "nho",
+          "frequency": 1,
+          "unique_words": [
+            "caminho"
+          ]
+        },
+        {
+          "rhyme_key": "nova",
+          "frequency": 1,
+          "unique_words": [
+            "Nova"
+          ]
+        },
+        {
+          "rhyme_key": "novo",
+          "frequency": 1,
+          "unique_words": [
+            "Novo"
+          ]
+        },
+        {
+          "rhyme_key": "ola",
+          "frequency": 1,
+          "unique_words": [
+            "'cantarolá'"
+          ]
+        },
+        {
+          "rhyme_key": "oso",
+          "frequency": 1,
+          "unique_words": [
+            "Cardoso"
+          ]
+        },
+        {
+          "rhyme_key": "par",
+          "frequency": 1,
+          "unique_words": [
+            "galopar"
+          ]
+        },
+        {
+          "rhyme_key": "rar",
+          "frequency": 1,
+          "unique_words": [
+            "preparar"
+          ]
+        },
+        {
+          "rhyme_key": "rau",
+          "frequency": 1,
+          "unique_words": [
+            "bacurau"
+          ]
+        },
+        {
+          "rhyme_key": "raz",
+          "frequency": 1,
+          "unique_words": [
+            "Alcatraz"
+          ]
+        },
+        {
+          "rhyme_key": "rima",
+          "frequency": 1,
+          "unique_words": [
+            "rima"
+          ]
+        },
+        {
+          "rhyme_key": "rio",
+          "frequency": 1,
+          "unique_words": [
+            "rio"
+          ]
+        },
+        {
+          "rhyme_key": "roa",
+          "frequency": 1,
+          "unique_words": [
+            "patroa"
+          ]
+        },
+        {
+          "rhyme_key": "seu",
+          "frequency": 1,
+          "unique_words": [
+            "Teseu"
+          ]
+        },
+        {
+          "rhyme_key": "tas",
+          "frequency": 1,
+          "unique_words": [
+            "Dantas"
+          ]
+        },
+        {
+          "rhyme_key": "tem",
+          "frequency": 1,
+          "unique_words": [
+            "tem"
+          ]
+        },
+        {
+          "rhyme_key": "toa",
+          "frequency": 1,
+          "unique_words": [
+            "leitoa"
+          ]
+        },
+        {
+          "rhyme_key": "uro",
+          "frequency": 1,
+          "unique_words": [
+            "seguro"
+          ]
+        },
+        {
+          "rhyme_key": "var",
+          "frequency": 1,
+          "unique_words": [
+            "louvar"
+          ]
+        },
+        {
+          "rhyme_key": "vaz",
+          "frequency": 1,
+          "unique_words": [
+            "Vaz"
+          ]
+        },
+        {
+          "rhyme_key": "voar",
+          "frequency": 1,
+          "unique_words": [
+            "voar"
+          ]
+        },
+        {
+          "rhyme_key": "voce",
+          "frequency": 1,
+          "unique_words": [
+            "você"
+          ]
+        },
+        {
+          "rhyme_key": "zar",
+          "frequency": 1,
+          "unique_words": [
+            "poetizar"
+          ]
+        },
+        {
+          "rhyme_key": "ze",
+          "frequency": 1,
+          "unique_words": [
+            "Zé"
+          ]
+        },
+        {
+          "rhyme_key": "zes",
+          "frequency": 1,
+          "unique_words": [
+            "raízes"
+          ]
+        }
+      ]
+    },
+    "AB": {
+      "total_line_endings": 183,
+      "unique_line_endings": [
+        "absurdo",
+        "adustina",
+        "afeganistao",
+        "alegria",
+        "alem",
+        "alquimia",
+        "amado",
+        "amizade",
+        "animado",
+        "anotacao",
+        "anotado",
+        "antenado",
+        "apertar",
+        "apora",
+        "aprendiz",
+        "aprendizado",
+        "aqui",
+        "araci",
+        "arco-iris",
+        "arrebol",
+        "artesao",
+        "asa",
+        "atolado",
+        "auroras",
+        "ausentou",
+        "autoridade",
+        "avatar",
+        "banzae",
+        "barcelona",
+        "barreto",
+        "boa",
+        "brejo",
+        "brumado",
+        "bule-bule",
+        "caetite",
+        "camarada",
+        "caminhada",
+        "caminhar",
+        "cancao",
+        "cancelas",
+        "candeal",
+        "cangaceiro",
+        "canoa",
+        "canudos",
+        "cardoso",
+        "carinho",
+        "casa",
+        "certeza",
+        "chama",
+        "cio",
+        "coite",
+        "colosso",
+        "completo",
+        "conselheiro",
+        "coracao",
+        "criterios",
+        "curdo",
+        "desanima",
+        "dipirona",
+        "diva",
+        "doa-lo",
+        "encarnacao",
+        "encontrar",
+        "encontrou",
+        "escola",
+        "esfera",
+        "espatifado",
+        "espera",
+        "esplanada",
+        "esqueceria",
+        "esta",
+        "estrada",
+        "fe",
+        "feliz",
+        "ficcao",
+        "fiel",
+        "florido",
+        "frio",
+        "futuro",
+        "gente",
+        "goulart",
+        "grandeza",
+        "grao-vizir",
+        "grosso",
+        "horas",
+        "ibitiara",
+        "ichu",
+        "imensidao",
+        "impedir",
+        "imperios",
+        "inesgotavel",
+        "inteiro",
+        "irmao",
+        "ituacu",
+        "izabel",
+        "jacobina",
+        "janelas",
+        "judicao",
+        "lamarao",
+        "lampiao",
+        "lastima",
+        "lisboa",
+        "lugar",
+        "maduro",
+        "magistral",
+        "manoel",
+        "mantem",
+        "mar",
+        "maradona",
+        "menestrel",
+        "mestre",
+        "misterios",
+        "morrer",
+        "mugido",
+        "nascer",
+        "natureza",
+        "ninho",
+        "nostalgia",
+        "parceria",
+        "pariu",
+        "passado",
+        "pediu",
+        "pedrao",
+        "pele",
+        "pelejar",
+        "perdido",
+        "perguntou",
+        "pesado",
+        "pincel",
+        "piritiba",
+        "poesia",
+        "profissao",
+        "quadrao",
+        "quimera",
+        "rabiscado",
+        "raposa",
+        "rasga-lo",
+        "real",
+        "repente",
+        "riachao",
+        "rima",
+        "rio",
+        "roma",
+        "sabia",
+        "salomao",
+        "santana",
+        "santo",
+        "se",
+        "seguro",
+        "senado",
+        "sertao",
+        "singeleza",
+        "sofreria",
+        "sol",
+        "solidao",
+        "somos",
+        "sossegado",
+        "soterrado",
+        "subiu",
+        "tanquinho",
+        "tejo",
+        "tem",
+        "valente",
+        "van",
+        "verdade",
+        "verdadeiro",
+        "versejar",
+        "vivi"
+      ],
+      "clusters": [
+        {
+          "rhyme_key": "ao",
+          "frequency": 27,
+          "unique_words": [
+            "judição",
+            "irmão",
+            "sertão",
+            "canção",
+            "Lamarão",
+            "Riachão",
+            "solidão",
+            "Pedrão",
+            "coração",
+            "encarnação",
+            "Salomão",
+            "quadrão",
+            "imensidão",
+            "anotação",
+            "profissão",
+            "Artesão",
+            "ficção",
+            "Lampião",
+            "Afeganistão"
+          ]
+        },
+        {
+          "rhyme_key": "ado",
+          "frequency": 15,
+          "unique_words": [
+            "passado",
+            "antenado",
+            "rabiscado",
+            "anotado",
+            "Senado",
+            "Brumado",
+            "atolado",
+            "Amado",
+            "pesado",
+            "espatifado",
+            "soterrado",
+            "animado",
+            "sossegado",
+            "aprendizado"
+          ]
+        },
+        {
+          "rhyme_key": "ia",
+          "frequency": 10,
+          "unique_words": [
+            "alquimia",
+            "esqueceria",
+            "alegria",
+            "sabia",
+            "nostalgia",
+            "sofreria",
+            "parceria",
+            "poesia"
+          ]
+        },
+        {
+          "rhyme_key": "ada",
+          "frequency": 5,
+          "unique_words": [
+            "camarada",
+            "Esplanada",
+            "estrada",
+            "caminhada"
+          ]
+        },
+        {
+          "rhyme_key": "el",
+          "frequency": 5,
+          "unique_words": [
+            "inesgotável",
+            "Manoel",
+            "Izabel",
+            "pincel",
+            "menestrel"
+          ]
+        },
+        {
+          "rhyme_key": "iro",
+          "frequency": 5,
+          "unique_words": [
+            "Conselheiro",
+            "cangaceiro",
+            "verdadeiro",
+            "inteiro"
+          ]
+        },
+        {
+          "rhyme_key": "eza",
+          "frequency": 4,
+          "unique_words": [
+            "natureza",
+            "singeleza",
+            "grandeza",
+            "certeza"
+          ]
+        },
+        {
+          "rhyme_key": "ade",
+          "frequency": 3,
+          "unique_words": [
+            "amizade",
+            "autoridade",
+            "verdade"
+          ]
+        },
+        {
+          "rhyme_key": "era",
+          "frequency": 3,
+          "unique_words": [
+            "esfera",
+            "espera",
+            "quimera"
+          ]
+        },
+        {
+          "rhyme_key": "ido",
+          "frequency": 3,
+          "unique_words": [
+            "perdido",
+            "florido",
+            "mugido"
+          ]
+        },
+        {
+          "rhyme_key": "ios",
+          "frequency": 3,
+          "unique_words": [
+            "critérios",
+            "impérios",
+            "mistérios"
+          ]
+        },
+        {
+          "rhyme_key": "nho",
+          "frequency": 3,
+          "unique_words": [
+            "Tanquinho",
+            "ninho",
+            "carinho"
+          ]
+        },
+        {
+          "rhyme_key": "nte",
+          "frequency": 3,
+          "unique_words": [
+            "gente",
+            "Valente",
+            "repente"
+          ]
+        },
+        {
+          "rhyme_key": "ona",
+          "frequency": 3,
+          "unique_words": [
+            "Barcelona",
+            "Maradona",
+            "Dipirona"
+          ]
+        },
+        {
+          "rhyme_key": "uro",
+          "frequency": 3,
+          "unique_words": [
+            "futuro",
+            "seguro",
+            "maduro"
+          ]
+        },
+        {
+          "rhyme_key": "-lo",
+          "frequency": 2,
+          "unique_words": [
+            "rasgá-lo",
+            "doá-lo"
+          ]
+        },
+        {
+          "rhyme_key": "boa",
+          "frequency": 2,
+          "unique_words": [
+            "Lisboa",
+            "boa"
+          ]
+        },
+        {
+          "rhyme_key": "eto",
+          "frequency": 2,
+          "unique_words": [
+            "Barreto",
+            "completo"
+          ]
+        },
+        {
+          "rhyme_key": "gar",
+          "frequency": 2,
+          "unique_words": [
+            "lugar"
+          ]
+        },
+        {
+          "rhyme_key": "ima",
+          "frequency": 2,
+          "unique_words": [
+            "lastima",
+            "desanima"
+          ]
+        },
+        {
+          "rhyme_key": "ina",
+          "frequency": 2,
+          "unique_words": [
+            "Adustina",
+            "Jacobina"
+          ]
+        },
+        {
+          "rhyme_key": "ite",
+          "frequency": 2,
+          "unique_words": [
+            "Caetité",
+            "Coité"
+          ]
+        },
+        {
+          "rhyme_key": "jar",
+          "frequency": 2,
+          "unique_words": [
+            "pelejar",
+            "versejar"
+          ]
+        },
+        {
+          "rhyme_key": "las",
+          "frequency": 2,
+          "unique_words": [
+            "janelas",
+            "cancelas"
+          ]
+        },
+        {
+          "rhyme_key": "mar",
+          "frequency": 2,
+          "unique_words": [
+            "mar"
+          ]
+        },
+        {
+          "rhyme_key": "ras",
+          "frequency": 2,
+          "unique_words": [
+            "horas",
+            "auroras"
+          ]
+        },
+        {
+          "rhyme_key": "rdo",
+          "frequency": 2,
+          "unique_words": [
+            "absurdo",
+            "curdo"
+          ]
+        },
+        {
+          "rhyme_key": "sso",
+          "frequency": 2,
+          "unique_words": [
+            "Grosso",
+            "colosso"
+          ]
+        },
+        {
+          "rhyme_key": "tar",
+          "frequency": 2,
+          "unique_words": [
+            "avatar",
+            "apertar"
+          ]
+        },
+        {
+          "rhyme_key": "tem",
+          "frequency": 2,
+          "unique_words": [
+            "tem",
+            "mantém"
+          ]
+        },
+        {
+          "rhyme_key": "tou",
+          "frequency": 2,
+          "unique_words": [
+            "ausentou",
+            "perguntou"
+          ]
+        },
+        {
+          "rhyme_key": "aci",
+          "frequency": 1,
+          "unique_words": [
+            "Araci"
+          ]
+        },
+        {
+          "rhyme_key": "acu",
+          "frequency": 1,
+          "unique_words": [
+            "Ituaçu"
+          ]
+        },
+        {
+          "rhyme_key": "alem",
+          "frequency": 1,
+          "unique_words": [
+            "além"
+          ]
+        },
+        {
+          "rhyme_key": "ama",
+          "frequency": 1,
+          "unique_words": [
+            "chama"
+          ]
+        },
+        {
+          "rhyme_key": "ana",
+          "frequency": 1,
+          "unique_words": [
+            "Santana"
+          ]
+        },
+        {
+          "rhyme_key": "aqui",
+          "frequency": 1,
+          "unique_words": [
+            "aqui"
+          ]
+        },
+        {
+          "rhyme_key": "ara",
+          "frequency": 1,
+          "unique_words": [
+            "Ibitiara"
+          ]
+        },
+        {
+          "rhyme_key": "art",
+          "frequency": 1,
+          "unique_words": [
+            "Goulart"
+          ]
+        },
+        {
+          "rhyme_key": "asa",
+          "frequency": 1,
+          "unique_words": [
+            "asa"
+          ]
+        },
+        {
+          "rhyme_key": "biu",
+          "frequency": 1,
+          "unique_words": [
+            "subiu"
+          ]
+        },
+        {
+          "rhyme_key": "bol",
+          "frequency": 1,
+          "unique_words": [
+            "arrebol"
+          ]
+        },
+        {
+          "rhyme_key": "casa",
+          "frequency": 1,
+          "unique_words": [
+            "casa"
+          ]
+        },
+        {
+          "rhyme_key": "cer",
+          "frequency": 1,
+          "unique_words": [
+            "nascer"
+          ]
+        },
+        {
+          "rhyme_key": "cio",
+          "frequency": 1,
+          "unique_words": [
+            "cio"
+          ]
+        },
+        {
+          "rhyme_key": "dir",
+          "frequency": 1,
+          "unique_words": [
+            "impedir"
+          ]
+        },
+        {
+          "rhyme_key": "diu",
+          "frequency": 1,
+          "unique_words": [
+            "pediu"
+          ]
+        },
+        {
+          "rhyme_key": "diva",
+          "frequency": 1,
+          "unique_words": [
+            "divã"
+          ]
+        },
+        {
+          "rhyme_key": "diz",
+          "frequency": 1,
+          "unique_words": [
+            "aprendiz"
+          ]
+        },
+        {
+          "rhyme_key": "dos",
+          "frequency": 1,
+          "unique_words": [
+            "Canudos"
+          ]
+        },
+        {
+          "rhyme_key": "eal",
+          "frequency": 1,
+          "unique_words": [
+            "Candeal"
+          ]
+        },
+        {
+          "rhyme_key": "ejo",
+          "frequency": 1,
+          "unique_words": [
+            "brejo"
+          ]
+        },
+        {
+          "rhyme_key": "esta",
+          "frequency": 1,
+          "unique_words": [
+            "está"
+          ]
+        },
+        {
+          "rhyme_key": "fe",
+          "frequency": 1,
+          "unique_words": [
+            "fé"
+          ]
+        },
+        {
+          "rhyme_key": "fiel",
+          "frequency": 1,
+          "unique_words": [
+            "fiel"
+          ]
+        },
+        {
+          "rhyme_key": "frio",
+          "frequency": 1,
+          "unique_words": [
+            "frio"
+          ]
+        },
+        {
+          "rhyme_key": "har",
+          "frequency": 1,
+          "unique_words": [
+            "caminhar"
+          ]
+        },
+        {
+          "rhyme_key": "iba",
+          "frequency": 1,
+          "unique_words": [
+            "Piritiba"
+          ]
+        },
+        {
+          "rhyme_key": "ichu",
+          "frequency": 1,
+          "unique_words": [
+            "Ichu"
+          ]
+        },
+        {
+          "rhyme_key": "liz",
+          "frequency": 1,
+          "unique_words": [
+            "feliz"
+          ]
+        },
+        {
+          "rhyme_key": "mos",
+          "frequency": 1,
+          "unique_words": [
+            "somos"
+          ]
+        },
+        {
+          "rhyme_key": "noa",
+          "frequency": 1,
+          "unique_words": [
+            "canoa"
+          ]
+        },
+        {
+          "rhyme_key": "nto",
+          "frequency": 1,
+          "unique_words": [
+            "Santo"
+          ]
+        },
+        {
+          "rhyme_key": "ola",
+          "frequency": 1,
+          "unique_words": [
+            "escola"
+          ]
+        },
+        {
+          "rhyme_key": "ora",
+          "frequency": 1,
+          "unique_words": [
+            "Aporá"
+          ]
+        },
+        {
+          "rhyme_key": "osa",
+          "frequency": 1,
+          "unique_words": [
+            "raposa"
+          ]
+        },
+        {
+          "rhyme_key": "oso",
+          "frequency": 1,
+          "unique_words": [
+            "Cardoso"
+          ]
+        },
+        {
+          "rhyme_key": "pele",
+          "frequency": 1,
+          "unique_words": [
+            "Pelé"
+          ]
+        },
+        {
+          "rhyme_key": "ral",
+          "frequency": 1,
+          "unique_words": [
+            "magistral"
+          ]
+        },
+        {
+          "rhyme_key": "rar",
+          "frequency": 1,
+          "unique_words": [
+            "encontrar"
+          ]
+        },
+        {
+          "rhyme_key": "real",
+          "frequency": 1,
+          "unique_words": [
+            "Real"
+          ]
+        },
+        {
+          "rhyme_key": "rer",
+          "frequency": 1,
+          "unique_words": [
+            "morrer"
+          ]
+        },
+        {
+          "rhyme_key": "rima",
+          "frequency": 1,
+          "unique_words": [
+            "rima"
+          ]
+        },
+        {
+          "rhyme_key": "rio",
+          "frequency": 1,
+          "unique_words": [
+            "rio"
+          ]
+        },
+        {
+          "rhyme_key": "ris",
+          "frequency": 1,
+          "unique_words": [
+            "arco-íris"
+          ]
+        },
+        {
+          "rhyme_key": "riu",
+          "frequency": 1,
+          "unique_words": [
+            "pariu"
+          ]
+        },
+        {
+          "rhyme_key": "roma",
+          "frequency": 1,
+          "unique_words": [
+            "romã"
+          ]
+        },
+        {
+          "rhyme_key": "rou",
+          "frequency": 1,
+          "unique_words": [
+            "encontrou"
+          ]
+        },
+        {
+          "rhyme_key": "se",
+          "frequency": 1,
+          "unique_words": [
+            "Sé"
+          ]
+        },
+        {
+          "rhyme_key": "sol",
+          "frequency": 1,
+          "unique_words": [
+            "sol"
+          ]
+        },
+        {
+          "rhyme_key": "tejo",
+          "frequency": 1,
+          "unique_words": [
+            "Tejo"
+          ]
+        },
+        {
+          "rhyme_key": "tre",
+          "frequency": 1,
+          "unique_words": [
+            "mestre"
+          ]
+        },
+        {
+          "rhyme_key": "ule",
+          "frequency": 1,
+          "unique_words": [
+            "Bule-Bule"
+          ]
+        },
+        {
+          "rhyme_key": "van",
+          "frequency": 1,
+          "unique_words": [
+            "van"
+          ]
+        },
+        {
+          "rhyme_key": "vivi",
+          "frequency": 1,
+          "unique_words": [
+            "vivi"
+          ]
+        },
+        {
+          "rhyme_key": "zae",
+          "frequency": 1,
+          "unique_words": [
+            "Banzaê"
+          ]
+        },
+        {
+          "rhyme_key": "zir",
+          "frequency": 1,
+          "unique_words": [
+            "grão-vizir"
+          ]
+        }
+      ]
+    }
+  }
+}

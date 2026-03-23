@@ -1,0 +1,26 @@
+{
+  "$schema": "./schema/content-index.schema.json",
+  "schemaVersion": "1.0.0",
+  "appId": "mandacaru",
+  "defaultTrailId": "trilha_feira_ao_anoitecer",
+  "trails": [
+    {
+      "id": "trilha_feira_ao_anoitecer",
+      "title": "Feira ao Anoitecer",
+      "status": "published",
+      "difficulty": "normal",
+      "estimatedDurationMin": 5,
+      "manifest": "./trails/trilha_feira_ao_anoitecer/trail.json",
+      "theme": "terra-noite",
+      "tags": [
+        "beta",
+        "cordel",
+        "feira",
+        "memoria",
+        "sertao",
+        "quadras",
+        "rima-urbana"
+      ]
+    }
+  ]
+}

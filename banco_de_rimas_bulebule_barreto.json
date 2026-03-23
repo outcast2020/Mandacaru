@@ -1,0 +1,1710 @@
+{
+  "BB": {
+    "total_line_endings": 182,
+    "unique_line_endings": [
+      "acanhamento",
+      "acao",
+      "adao",
+      "adocado",
+      "afinada",
+      "agalopado",
+      "alcatraz",
+      "alegria",
+      "alem",
+      "aprovado",
+      "aramari",
+      "arcado",
+      "arribacao",
+      "bacurau",
+      "bahia",
+      "barbara",
+      "barretao",
+      "barreto",
+      "beleza",
+      "bem",
+      "berimbau",
+      "bondade",
+      "bonito",
+      "boquiaberto",
+      "brio",
+      "brumado",
+      "ca",
+      "caminho",
+      "cantarola",
+      "cantoria",
+      "cardoso",
+      "carrossel",
+      "cavalo",
+      "certo",
+      "chegando",
+      "clarao",
+      "coado",
+      "coracao",
+      "cordao",
+      "cordel",
+      "crisopolis",
+      "curaca",
+      "damiao",
+      "dantas",
+      "dende",
+      "dente",
+      "desbanca",
+      "destino",
+      "deu",
+      "dia",
+      "diplomado",
+      "direcao",
+      "doa-lo",
+      "encantacao",
+      "era",
+      "espera",
+      "estradas",
+      "falar",
+      "falo",
+      "fe",
+      "feiticaria",
+      "ferido",
+      "firmeza",
+      "gabriel",
+      "galopar",
+      "gamba",
+      "gente",
+      "geografia",
+      "gilberto",
+      "grotao",
+      "guarda-lo",
+      "guerra",
+      "harmonia",
+      "heliopolis",
+      "improvisado",
+      "inglaterra",
+      "inspiracao",
+      "inteira",
+      "ipecaeta",
+      "ipira",
+      "irara",
+      "jaboatao",
+      "juazeiro",
+      "la",
+      "lado",
+      "lampiao",
+      "legado",
+      "leitoa",
+      "liberdade",
+      "lisboa",
+      "lobisomem",
+      "louvar",
+      "luz",
+      "maca",
+      "magia",
+      "manca",
+      "mar",
+      "maracana",
+      "maradona",
+      "maria",
+      "marinha",
+      "matulao",
+      "menino",
+      "misterios",
+      "momento",
+      "mundo",
+      "nova",
+      "novo",
+      "obra-prima",
+      "oracao",
+      "paixao",
+      "pamplona",
+      "pancada",
+      "paquistao",
+      "parada",
+      "passado",
+      "patroa",
+      "pensamento",
+      "platao",
+      "plutao",
+      "poesia",
+      "poetizar",
+      "pombal",
+      "popular",
+      "preparar",
+      "presidente",
+      "primavera",
+      "quadrao",
+      "raizes",
+      "registrado",
+      "reinado",
+      "repente",
+      "ricona",
+      "rima",
+      "rio",
+      "sabedoria",
+      "sabia",
+      "sansao",
+      "seguro",
+      "serrinha",
+      "sertao",
+      "sonhar",
+      "sumiu",
+      "surpresa",
+      "talento",
+      "tamandua",
+      "teera",
+      "tem",
+      "teseu",
+      "tomaz",
+      "utopia",
+      "vassalo",
+      "vaz",
+      "vento",
+      "verao",
+      "verdade",
+      "versando",
+      "voar",
+      "voce",
+      "ze"
+    ],
+    "clusters": [
+      {
+        "rhyme_key": "ao",
+        "frequency": 28,
+        "unique_words": [
+          "sertão",
+          "inspiração",
+          "arribação",
+          "verão",
+          "matulão",
+          "Barretão",
+          "grotão",
+          "encantação",
+          "direção",
+          "quadrão",
+          "oração",
+          "coração",
+          "Lampião",
+          "Jaboatão",
+          "Damião",
+          "Paquistão",
+          "Sansão",
+          "paixão",
+          "Platão",
+          "Plutão",
+          "clarão",
+          "cordão"
+        ]
+      },
+      {
+        "rhyme_key": "ia",
+        "frequency": 16,
+        "unique_words": [
+          "alegria",
+          "poesia",
+          "sabedoria",
+          "magia",
+          "geografia",
+          "Bahia",
+          "sabiá",
+          "cantoria",
+          "utopia",
+          "harmonia"
+        ]
+      },
+      {
+        "rhyme_key": "ado",
+        "frequency": 12,
+        "unique_words": [
+          "passado",
+          "legado",
+          "diplomado",
+          "Arcado",
+          "reinado",
+          "Brumado",
+          "improvisado",
+          "coado",
+          "adoçado",
+          "registrado",
+          "agalopado",
+          "aprovado"
+        ]
+      },
+      {
+        "rhyme_key": "era",
+        "frequency": 5,
+        "unique_words": [
+          "primavera",
+          "espera",
+          "Era",
+          "Teerã"
+        ]
+      },
+      {
+        "rhyme_key": "nte",
+        "frequency": 5,
+        "unique_words": [
+          "gente",
+          "presidente",
+          "dente",
+          "repente"
+        ]
+      },
+      {
+        "rhyme_key": "nto",
+        "frequency": 5,
+        "unique_words": [
+          "talento",
+          "acanhamento",
+          "vento",
+          "pensamento",
+          "momento"
+        ]
+      },
+      {
+        "rhyme_key": "el",
+        "frequency": 4,
+        "unique_words": [
+          "Gabriel",
+          "cordel",
+          "carrossel"
+        ]
+      },
+      {
+        "rhyme_key": "ada",
+        "frequency": 3,
+        "unique_words": [
+          "afinada",
+          "parada",
+          "pancada"
+        ]
+      },
+      {
+        "rhyme_key": "ade",
+        "frequency": 3,
+        "unique_words": [
+          "verdade",
+          "bondade",
+          "liberdade"
+        ]
+      },
+      {
+        "rhyme_key": "la",
+        "frequency": 3,
+        "unique_words": [
+          "lá"
+        ]
+      },
+      {
+        "rhyme_key": "lado",
+        "frequency": 3,
+        "unique_words": [
+          "lado"
+        ]
+      },
+      {
+        "rhyme_key": "ndo",
+        "frequency": 3,
+        "unique_words": [
+          "mundo",
+          "versando",
+          "chegando"
+        ]
+      },
+      {
+        "rhyme_key": "ona",
+        "frequency": 3,
+        "unique_words": [
+          "Maradona",
+          "Pamplona",
+          "ricona"
+        ]
+      },
+      {
+        "rhyme_key": "rto",
+        "frequency": 3,
+        "unique_words": [
+          "certo",
+          "Gilberto",
+          "boquiaberto"
+        ]
+      },
+      {
+        "rhyme_key": "-lo",
+        "frequency": 2,
+        "unique_words": [
+          "guardá-lo",
+          "doá-lo"
+        ]
+      },
+      {
+        "rhyme_key": "alo",
+        "frequency": 2,
+        "unique_words": [
+          "cavalo",
+          "vassalo"
+        ]
+      },
+      {
+        "rhyme_key": "ara",
+        "frequency": 2,
+        "unique_words": [
+          "Bárbara",
+          "Irará"
+        ]
+      },
+      {
+        "rhyme_key": "aria",
+        "frequency": 2,
+        "unique_words": [
+          "Maria",
+          "feitiçaria"
+        ]
+      },
+      {
+        "rhyme_key": "brio",
+        "frequency": 2,
+        "unique_words": [
+          "brio"
+        ]
+      },
+      {
+        "rhyme_key": "dia",
+        "frequency": 2,
+        "unique_words": [
+          "dia"
+        ]
+      },
+      {
+        "rhyme_key": "eza",
+        "frequency": 2,
+        "unique_words": [
+          "beleza",
+          "firmeza"
+        ]
+      },
+      {
+        "rhyme_key": "ino",
+        "frequency": 2,
+        "unique_words": [
+          "destino",
+          "menino"
+        ]
+      },
+      {
+        "rhyme_key": "lar",
+        "frequency": 2,
+        "unique_words": [
+          "popular",
+          "falar"
+        ]
+      },
+      {
+        "rhyme_key": "lis",
+        "frequency": 2,
+        "unique_words": [
+          "Heliópolis",
+          "Crisópolis"
+        ]
+      },
+      {
+        "rhyme_key": "mar",
+        "frequency": 2,
+        "unique_words": [
+          "mar"
+        ]
+      },
+      {
+        "rhyme_key": "nca",
+        "frequency": 2,
+        "unique_words": [
+          "manca",
+          "desbanca"
+        ]
+      },
+      {
+        "rhyme_key": "nha",
+        "frequency": 2,
+        "unique_words": [
+          "Serrinha",
+          "Marinha"
+        ]
+      },
+      {
+        "rhyme_key": "rra",
+        "frequency": 2,
+        "unique_words": [
+          "Inglaterra",
+          "guerra"
+        ]
+      },
+      {
+        "rhyme_key": "aca",
+        "frequency": 1,
+        "unique_words": [
+          "Curaçá"
+        ]
+      },
+      {
+        "rhyme_key": "acao",
+        "frequency": 1,
+        "unique_words": [
+          "ação"
+        ]
+      },
+      {
+        "rhyme_key": "adao",
+        "frequency": 1,
+        "unique_words": [
+          "Adão"
+        ]
+      },
+      {
+        "rhyme_key": "alem",
+        "frequency": 1,
+        "unique_words": [
+          "além"
+        ]
+      },
+      {
+        "rhyme_key": "ana",
+        "frequency": 1,
+        "unique_words": [
+          "Maracanã"
+        ]
+      },
+      {
+        "rhyme_key": "ari",
+        "frequency": 1,
+        "unique_words": [
+          "Aramari"
+        ]
+      },
+      {
+        "rhyme_key": "bal",
+        "frequency": 1,
+        "unique_words": [
+          "Pombal"
+        ]
+      },
+      {
+        "rhyme_key": "bau",
+        "frequency": 1,
+        "unique_words": [
+          "Berimbau"
+        ]
+      },
+      {
+        "rhyme_key": "bem",
+        "frequency": 1,
+        "unique_words": [
+          "bem"
+        ]
+      },
+      {
+        "rhyme_key": "boa",
+        "frequency": 1,
+        "unique_words": [
+          "Lisboa"
+        ]
+      },
+      {
+        "rhyme_key": "ca",
+        "frequency": 1,
+        "unique_words": [
+          "cá"
+        ]
+      },
+      {
+        "rhyme_key": "das",
+        "frequency": 1,
+        "unique_words": [
+          "estradas"
+        ]
+      },
+      {
+        "rhyme_key": "deu",
+        "frequency": 1,
+        "unique_words": [
+          "deu"
+        ]
+      },
+      {
+        "rhyme_key": "dua",
+        "frequency": 1,
+        "unique_words": [
+          "tamanduá"
+        ]
+      },
+      {
+        "rhyme_key": "eira",
+        "frequency": 1,
+        "unique_words": [
+          "inteira"
+        ]
+      },
+      {
+        "rhyme_key": "esa",
+        "frequency": 1,
+        "unique_words": [
+          "surpresa"
+        ]
+      },
+      {
+        "rhyme_key": "eta",
+        "frequency": 1,
+        "unique_words": [
+          "Ipecaetá"
+        ]
+      },
+      {
+        "rhyme_key": "eto",
+        "frequency": 1,
+        "unique_words": [
+          "Barreto"
+        ]
+      },
+      {
+        "rhyme_key": "falo",
+        "frequency": 1,
+        "unique_words": [
+          "falo"
+        ]
+      },
+      {
+        "rhyme_key": "fe",
+        "frequency": 1,
+        "unique_words": [
+          "fé"
+        ]
+      },
+      {
+        "rhyme_key": "har",
+        "frequency": 1,
+        "unique_words": [
+          "sonhar"
+        ]
+      },
+      {
+        "rhyme_key": "ido",
+        "frequency": 1,
+        "unique_words": [
+          "ferido"
+        ]
+      },
+      {
+        "rhyme_key": "ima",
+        "frequency": 1,
+        "unique_words": [
+          "obra-prima"
+        ]
+      },
+      {
+        "rhyme_key": "ios",
+        "frequency": 1,
+        "unique_words": [
+          "mistérios"
+        ]
+      },
+      {
+        "rhyme_key": "ira",
+        "frequency": 1,
+        "unique_words": [
+          "Ipirá"
+        ]
+      },
+      {
+        "rhyme_key": "iro",
+        "frequency": 1,
+        "unique_words": [
+          "Juazeiro"
+        ]
+      },
+      {
+        "rhyme_key": "ito",
+        "frequency": 1,
+        "unique_words": [
+          "bonito"
+        ]
+      },
+      {
+        "rhyme_key": "luz",
+        "frequency": 1,
+        "unique_words": [
+          "Luz"
+        ]
+      },
+      {
+        "rhyme_key": "maca",
+        "frequency": 1,
+        "unique_words": [
+          "maçã"
+        ]
+      },
+      {
+        "rhyme_key": "maz",
+        "frequency": 1,
+        "unique_words": [
+          "Tomaz"
+        ]
+      },
+      {
+        "rhyme_key": "mba",
+        "frequency": 1,
+        "unique_words": [
+          "gambá"
+        ]
+      },
+      {
+        "rhyme_key": "mem",
+        "frequency": 1,
+        "unique_words": [
+          "lobisomem"
+        ]
+      },
+      {
+        "rhyme_key": "miu",
+        "frequency": 1,
+        "unique_words": [
+          "sumiu"
+        ]
+      },
+      {
+        "rhyme_key": "nde",
+        "frequency": 1,
+        "unique_words": [
+          "dendê"
+        ]
+      },
+      {
+        "rhyme_key": "nho",
+        "frequency": 1,
+        "unique_words": [
+          "caminho"
+        ]
+      },
+      {
+        "rhyme_key": "nova",
+        "frequency": 1,
+        "unique_words": [
+          "Nova"
+        ]
+      },
+      {
+        "rhyme_key": "novo",
+        "frequency": 1,
+        "unique_words": [
+          "Novo"
+        ]
+      },
+      {
+        "rhyme_key": "ola",
+        "frequency": 1,
+        "unique_words": [
+          "'cantarolá'"
+        ]
+      },
+      {
+        "rhyme_key": "oso",
+        "frequency": 1,
+        "unique_words": [
+          "Cardoso"
+        ]
+      },
+      {
+        "rhyme_key": "par",
+        "frequency": 1,
+        "unique_words": [
+          "galopar"
+        ]
+      },
+      {
+        "rhyme_key": "rar",
+        "frequency": 1,
+        "unique_words": [
+          "preparar"
+        ]
+      },
+      {
+        "rhyme_key": "rau",
+        "frequency": 1,
+        "unique_words": [
+          "bacurau"
+        ]
+      },
+      {
+        "rhyme_key": "raz",
+        "frequency": 1,
+        "unique_words": [
+          "Alcatraz"
+        ]
+      },
+      {
+        "rhyme_key": "rima",
+        "frequency": 1,
+        "unique_words": [
+          "rima"
+        ]
+      },
+      {
+        "rhyme_key": "rio",
+        "frequency": 1,
+        "unique_words": [
+          "rio"
+        ]
+      },
+      {
+        "rhyme_key": "roa",
+        "frequency": 1,
+        "unique_words": [
+          "patroa"
+        ]
+      },
+      {
+        "rhyme_key": "seu",
+        "frequency": 1,
+        "unique_words": [
+          "Teseu"
+        ]
+      },
+      {
+        "rhyme_key": "tas",
+        "frequency": 1,
+        "unique_words": [
+          "Dantas"
+        ]
+      },
+      {
+        "rhyme_key": "tem",
+        "frequency": 1,
+        "unique_words": [
+          "tem"
+        ]
+      },
+      {
+        "rhyme_key": "toa",
+        "frequency": 1,
+        "unique_words": [
+          "leitoa"
+        ]
+      },
+      {
+        "rhyme_key": "uro",
+        "frequency": 1,
+        "unique_words": [
+          "seguro"
+        ]
+      },
+      {
+        "rhyme_key": "var",
+        "frequency": 1,
+        "unique_words": [
+          "louvar"
+        ]
+      },
+      {
+        "rhyme_key": "vaz",
+        "frequency": 1,
+        "unique_words": [
+          "Vaz"
+        ]
+      },
+      {
+        "rhyme_key": "voar",
+        "frequency": 1,
+        "unique_words": [
+          "voar"
+        ]
+      },
+      {
+        "rhyme_key": "voce",
+        "frequency": 1,
+        "unique_words": [
+          "você"
+        ]
+      },
+      {
+        "rhyme_key": "zar",
+        "frequency": 1,
+        "unique_words": [
+          "poetizar"
+        ]
+      },
+      {
+        "rhyme_key": "ze",
+        "frequency": 1,
+        "unique_words": [
+          "Zé"
+        ]
+      },
+      {
+        "rhyme_key": "zes",
+        "frequency": 1,
+        "unique_words": [
+          "raízes"
+        ]
+      }
+    ]
+  },
+  "AB": {
+    "total_line_endings": 183,
+    "unique_line_endings": [
+      "absurdo",
+      "adustina",
+      "afeganistao",
+      "alegria",
+      "alem",
+      "alquimia",
+      "amado",
+      "amizade",
+      "animado",
+      "anotacao",
+      "anotado",
+      "antenado",
+      "apertar",
+      "apora",
+      "aprendiz",
+      "aprendizado",
+      "aqui",
+      "araci",
+      "arco-iris",
+      "arrebol",
+      "artesao",
+      "asa",
+      "atolado",
+      "auroras",
+      "ausentou",
+      "autoridade",
+      "avatar",
+      "banzae",
+      "barcelona",
+      "barreto",
+      "boa",
+      "brejo",
+      "brumado",
+      "bule-bule",
+      "caetite",
+      "camarada",
+      "caminhada",
+      "caminhar",
+      "cancao",
+      "cancelas",
+      "candeal",
+      "cangaceiro",
+      "canoa",
+      "canudos",
+      "cardoso",
+      "carinho",
+      "casa",
+      "certeza",
+      "chama",
+      "cio",
+      "coite",
+      "colosso",
+      "completo",
+      "conselheiro",
+      "coracao",
+      "criterios",
+      "curdo",
+      "desanima",
+      "dipirona",
+      "diva",
+      "doa-lo",
+      "encarnacao",
+      "encontrar",
+      "encontrou",
+      "escola",
+      "esfera",
+      "espatifado",
+      "espera",
+      "esplanada",
+      "esqueceria",
+      "esta",
+      "estrada",
+      "fe",
+      "feliz",
+      "ficcao",
+      "fiel",
+      "florido",
+      "frio",
+      "futuro",
+      "gente",
+      "goulart",
+      "grandeza",
+      "grao-vizir",
+      "grosso",
+      "horas",
+      "ibitiara",
+      "ichu",
+      "imensidao",
+      "impedir",
+      "imperios",
+      "inesgotavel",
+      "inteiro",
+      "irmao",
+      "ituacu",
+      "izabel",
+      "jacobina",
+      "janelas",
+      "judicao",
+      "lamarao",
+      "lampiao",
+      "lastima",
+      "lisboa",
+      "lugar",
+      "maduro",
+      "magistral",
+      "manoel",
+      "mantem",
+      "mar",
+      "maradona",
+      "menestrel",
+      "mestre",
+      "misterios",
+      "morrer",
+      "mugido",
+      "nascer",
+      "natureza",
+      "ninho",
+      "nostalgia",
+      "parceria",
+      "pariu",
+      "passado",
+      "pediu",
+      "pedrao",
+      "pele",
+      "pelejar",
+      "perdido",
+      "perguntou",
+      "pesado",
+      "pincel",
+      "piritiba",
+      "poesia",
+      "profissao",
+      "quadrao",
+      "quimera",
+      "rabiscado",
+      "raposa",
+      "rasga-lo",
+      "real",
+      "repente",
+      "riachao",
+      "rima",
+      "rio",
+      "roma",
+      "sabia",
+      "salomao",
+      "santana",
+      "santo",
+      "se",
+      "seguro",
+      "senado",
+      "sertao",
+      "singeleza",
+      "sofreria",
+      "sol",
+      "solidao",
+      "somos",
+      "sossegado",
+      "soterrado",
+      "subiu",
+      "tanquinho",
+      "tejo",
+      "tem",
+      "valente",
+      "van",
+      "verdade",
+      "verdadeiro",
+      "versejar",
+      "vivi"
+    ],
+    "clusters": [
+      {
+        "rhyme_key": "ao",
+        "frequency": 27,
+        "unique_words": [
+          "judição",
+          "irmão",
+          "sertão",
+          "canção",
+          "Lamarão",
+          "Riachão",
+          "solidão",
+          "Pedrão",
+          "coração",
+          "encarnação",
+          "Salomão",
+          "quadrão",
+          "imensidão",
+          "anotação",
+          "profissão",
+          "Artesão",
+          "ficção",
+          "Lampião",
+          "Afeganistão"
+        ]
+      },
+      {
+        "rhyme_key": "ado",
+        "frequency": 15,
+        "unique_words": [
+          "passado",
+          "antenado",
+          "rabiscado",
+          "anotado",
+          "Senado",
+          "Brumado",
+          "atolado",
+          "Amado",
+          "pesado",
+          "espatifado",
+          "soterrado",
+          "animado",
+          "sossegado",
+          "aprendizado"
+        ]
+      },
+      {
+        "rhyme_key": "ia",
+        "frequency": 10,
+        "unique_words": [
+          "alquimia",
+          "esqueceria",
+          "alegria",
+          "sabia",
+          "nostalgia",
+          "sofreria",
+          "parceria",
+          "poesia"
+        ]
+      },
+      {
+        "rhyme_key": "ada",
+        "frequency": 5,
+        "unique_words": [
+          "camarada",
+          "Esplanada",
+          "estrada",
+          "caminhada"
+        ]
+      },
+      {
+        "rhyme_key": "el",
+        "frequency": 5,
+        "unique_words": [
+          "inesgotável",
+          "Manoel",
+          "Izabel",
+          "pincel",
+          "menestrel"
+        ]
+      },
+      {
+        "rhyme_key": "iro",
+        "frequency": 5,
+        "unique_words": [
+          "Conselheiro",
+          "cangaceiro",
+          "verdadeiro",
+          "inteiro"
+        ]
+      },
+      {
+        "rhyme_key": "eza",
+        "frequency": 4,
+        "unique_words": [
+          "natureza",
+          "singeleza",
+          "grandeza",
+          "certeza"
+        ]
+      },
+      {
+        "rhyme_key": "ade",
+        "frequency": 3,
+        "unique_words": [
+          "amizade",
+          "autoridade",
+          "verdade"
+        ]
+      },
+      {
+        "rhyme_key": "era",
+        "frequency": 3,
+        "unique_words": [
+          "esfera",
+          "espera",
+          "quimera"
+        ]
+      },
+      {
+        "rhyme_key": "ido",
+        "frequency": 3,
+        "unique_words": [
+          "perdido",
+          "florido",
+          "mugido"
+        ]
+      },
+      {
+        "rhyme_key": "ios",
+        "frequency": 3,
+        "unique_words": [
+          "critérios",
+          "impérios",
+          "mistérios"
+        ]
+      },
+      {
+        "rhyme_key": "nho",
+        "frequency": 3,
+        "unique_words": [
+          "Tanquinho",
+          "ninho",
+          "carinho"
+        ]
+      },
+      {
+        "rhyme_key": "nte",
+        "frequency": 3,
+        "unique_words": [
+          "gente",
+          "Valente",
+          "repente"
+        ]
+      },
+      {
+        "rhyme_key": "ona",
+        "frequency": 3,
+        "unique_words": [
+          "Barcelona",
+          "Maradona",
+          "Dipirona"
+        ]
+      },
+      {
+        "rhyme_key": "uro",
+        "frequency": 3,
+        "unique_words": [
+          "futuro",
+          "seguro",
+          "maduro"
+        ]
+      },
+      {
+        "rhyme_key": "-lo",
+        "frequency": 2,
+        "unique_words": [
+          "rasgá-lo",
+          "doá-lo"
+        ]
+      },
+      {
+        "rhyme_key": "boa",
+        "frequency": 2,
+        "unique_words": [
+          "Lisboa",
+          "boa"
+        ]
+      },
+      {
+        "rhyme_key": "eto",
+        "frequency": 2,
+        "unique_words": [
+          "Barreto",
+          "completo"
+        ]
+      },
+      {
+        "rhyme_key": "gar",
+        "frequency": 2,
+        "unique_words": [
+          "lugar"
+        ]
+      },
+      {
+        "rhyme_key": "ima",
+        "frequency": 2,
+        "unique_words": [
+          "lastima",
+          "desanima"
+        ]
+      },
+      {
+        "rhyme_key": "ina",
+        "frequency": 2,
+        "unique_words": [
+          "Adustina",
+          "Jacobina"
+        ]
+      },
+      {
+        "rhyme_key": "ite",
+        "frequency": 2,
+        "unique_words": [
+          "Caetité",
+          "Coité"
+        ]
+      },
+      {
+        "rhyme_key": "jar",
+        "frequency": 2,
+        "unique_words": [
+          "pelejar",
+          "versejar"
+        ]
+      },
+      {
+        "rhyme_key": "las",
+        "frequency": 2,
+        "unique_words": [
+          "janelas",
+          "cancelas"
+        ]
+      },
+      {
+        "rhyme_key": "mar",
+        "frequency": 2,
+        "unique_words": [
+          "mar"
+        ]
+      },
+      {
+        "rhyme_key": "ras",
+        "frequency": 2,
+        "unique_words": [
+          "horas",
+          "auroras"
+        ]
+      },
+      {
+        "rhyme_key": "rdo",
+        "frequency": 2,
+        "unique_words": [
+          "absurdo",
+          "curdo"
+        ]
+      },
+      {
+        "rhyme_key": "sso",
+        "frequency": 2,
+        "unique_words": [
+          "Grosso",
+          "colosso"
+        ]
+      },
+      {
+        "rhyme_key": "tar",
+        "frequency": 2,
+        "unique_words": [
+          "avatar",
+          "apertar"
+        ]
+      },
+      {
+        "rhyme_key": "tem",
+        "frequency": 2,
+        "unique_words": [
+          "tem",
+          "mantém"
+        ]
+      },
+      {
+        "rhyme_key": "tou",
+        "frequency": 2,
+        "unique_words": [
+          "ausentou",
+          "perguntou"
+        ]
+      },
+      {
+        "rhyme_key": "aci",
+        "frequency": 1,
+        "unique_words": [
+          "Araci"
+        ]
+      },
+      {
+        "rhyme_key": "acu",
+        "frequency": 1,
+        "unique_words": [
+          "Ituaçu"
+        ]
+      },
+      {
+        "rhyme_key": "alem",
+        "frequency": 1,
+        "unique_words": [
+          "além"
+        ]
+      },
+      {
+        "rhyme_key": "ama",
+        "frequency": 1,
+        "unique_words": [
+          "chama"
+        ]
+      },
+      {
+        "rhyme_key": "ana",
+        "frequency": 1,
+        "unique_words": [
+          "Santana"
+        ]
+      },
+      {
+        "rhyme_key": "aqui",
+        "frequency": 1,
+        "unique_words": [
+          "aqui"
+        ]
+      },
+      {
+        "rhyme_key": "ara",
+        "frequency": 1,
+        "unique_words": [
+          "Ibitiara"
+        ]
+      },
+      {
+        "rhyme_key": "art",
+        "frequency": 1,
+        "unique_words": [
+          "Goulart"
+        ]
+      },
+      {
+        "rhyme_key": "asa",
+        "frequency": 1,
+        "unique_words": [
+          "asa"
+        ]
+      },
+      {
+        "rhyme_key": "biu",
+        "frequency": 1,
+        "unique_words": [
+          "subiu"
+        ]
+      },
+      {
+        "rhyme_key": "bol",
+        "frequency": 1,
+        "unique_words": [
+          "arrebol"
+        ]
+      },
+      {
+        "rhyme_key": "casa",
+        "frequency": 1,
+        "unique_words": [
+          "casa"
+        ]
+      },
+      {
+        "rhyme_key": "cer",
+        "frequency": 1,
+        "unique_words": [
+          "nascer"
+        ]
+      },
+      {
+        "rhyme_key": "cio",
+        "frequency": 1,
+        "unique_words": [
+          "cio"
+        ]
+      },
+      {
+        "rhyme_key": "dir",
+        "frequency": 1,
+        "unique_words": [
+          "impedir"
+        ]
+      },
+      {
+        "rhyme_key": "diu",
+        "frequency": 1,
+        "unique_words": [
+          "pediu"
+        ]
+      },
+      {
+        "rhyme_key": "diva",
+        "frequency": 1,
+        "unique_words": [
+          "divã"
+        ]
+      },
+      {
+        "rhyme_key": "diz",
+        "frequency": 1,
+        "unique_words": [
+          "aprendiz"
+        ]
+      },
+      {
+        "rhyme_key": "dos",
+        "frequency": 1,
+        "unique_words": [
+          "Canudos"
+        ]
+      },
+      {
+        "rhyme_key": "eal",
+        "frequency": 1,
+        "unique_words": [
+          "Candeal"
+        ]
+      },
+      {
+        "rhyme_key": "ejo",
+        "frequency": 1,
+        "unique_words": [
+          "brejo"
+        ]
+      },
+      {
+        "rhyme_key": "esta",
+        "frequency": 1,
+        "unique_words": [
+          "está"
+        ]
+      },
+      {
+        "rhyme_key": "fe",
+        "frequency": 1,
+        "unique_words": [
+          "fé"
+        ]
+      },
+      {
+        "rhyme_key": "fiel",
+        "frequency": 1,
+        "unique_words": [
+          "fiel"
+        ]
+      },
+      {
+        "rhyme_key": "frio",
+        "frequency": 1,
+        "unique_words": [
+          "frio"
+        ]
+      },
+      {
+        "rhyme_key": "har",
+        "frequency": 1,
+        "unique_words": [
+          "caminhar"
+        ]
+      },
+      {
+        "rhyme_key": "iba",
+        "frequency": 1,
+        "unique_words": [
+          "Piritiba"
+        ]
+      },
+      {
+        "rhyme_key": "ichu",
+        "frequency": 1,
+        "unique_words": [
+          "Ichu"
+        ]
+      },
+      {
+        "rhyme_key": "liz",
+        "frequency": 1,
+        "unique_words": [
+          "feliz"
+        ]
+      },
+      {
+        "rhyme_key": "mos",
+        "frequency": 1,
+        "unique_words": [
+          "somos"
+        ]
+      },
+      {
+        "rhyme_key": "noa",
+        "frequency": 1,
+        "unique_words": [
+          "canoa"
+        ]
+      },
+      {
+        "rhyme_key": "nto",
+        "frequency": 1,
+        "unique_words": [
+          "Santo"
+        ]
+      },
+      {
+        "rhyme_key": "ola",
+        "frequency": 1,
+        "unique_words": [
+          "escola"
+        ]
+      },
+      {
+        "rhyme_key": "ora",
+        "frequency": 1,
+        "unique_words": [
+          "Aporá"
+        ]
+      },
+      {
+        "rhyme_key": "osa",
+        "frequency": 1,
+        "unique_words": [
+          "raposa"
+        ]
+      },
+      {
+        "rhyme_key": "oso",
+        "frequency": 1,
+        "unique_words": [
+          "Cardoso"
+        ]
+      },
+      {
+        "rhyme_key": "pele",
+        "frequency": 1,
+        "unique_words": [
+          "Pelé"
+        ]
+      },
+      {
+        "rhyme_key": "ral",
+        "frequency": 1,
+        "unique_words": [
+          "magistral"
+        ]
+      },
+      {
+        "rhyme_key": "rar",
+        "frequency": 1,
+        "unique_words": [
+          "encontrar"
+        ]
+      },
+      {
+        "rhyme_key": "real",
+        "frequency": 1,
+        "unique_words": [
+          "Real"
+        ]
+      },
+      {
+        "rhyme_key": "rer",
+        "frequency": 1,
+        "unique_words": [
+          "morrer"
+        ]
+      },
+      {
+        "rhyme_key": "rima",
+        "frequency": 1,
+        "unique_words": [
+          "rima"
+        ]
+      },
+      {
+        "rhyme_key": "rio",
+        "frequency": 1,
+        "unique_words": [
+          "rio"
+        ]
+      },
+      {
+        "rhyme_key": "ris",
+        "frequency": 1,
+        "unique_words": [
+          "arco-íris"
+        ]
+      },
+      {
+        "rhyme_key": "riu",
+        "frequency": 1,
+        "unique_words": [
+          "pariu"
+        ]
+      },
+      {
+        "rhyme_key": "roma",
+        "frequency": 1,
+        "unique_words": [
+          "romã"
+        ]
+      },
+      {
+        "rhyme_key": "rou",
+        "frequency": 1,
+        "unique_words": [
+          "encontrou"
+        ]
+      },
+      {
+        "rhyme_key": "se",
+        "frequency": 1,
+        "unique_words": [
+          "Sé"
+        ]
+      },
+      {
+        "rhyme_key": "sol",
+        "frequency": 1,
+        "unique_words": [
+          "sol"
+        ]
+      },
+      {
+        "rhyme_key": "tejo",
+        "frequency": 1,
+        "unique_words": [
+          "Tejo"
+        ]
+      },
+      {
+        "rhyme_key": "tre",
+        "frequency": 1,
+        "unique_words": [
+          "mestre"
+        ]
+      },
+      {
+        "rhyme_key": "ule",
+        "frequency": 1,
+        "unique_words": [
+          "Bule-Bule"
+        ]
+      },
+      {
+        "rhyme_key": "van",
+        "frequency": 1,
+        "unique_words": [
+          "van"
+        ]
+      },
+      {
+        "rhyme_key": "vivi",
+        "frequency": 1,
+        "unique_words": [
+          "vivi"
+        ]
+      },
+      {
+        "rhyme_key": "zae",
+        "frequency": 1,
+        "unique_words": [
+          "Banzaê"
+        ]
+      },
+      {
+        "rhyme_key": "zir",
+        "frequency": 1,
+        "unique_words": [
+          "grão-vizir"
+        ]
+      }
+    ]
+  }
+}

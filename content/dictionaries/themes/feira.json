@@ -1,0 +1,69 @@
+{
+  "$schema": "../../schema/theme-dictionary.schema.json",
+  "schemaVersion": "1.0.0",
+  "id": "theme_feira",
+  "title": "Feira ao Anoitecer",
+  "contexts": [
+    "feira",
+    "cordel",
+    "memoria",
+    "sertao",
+    "trabalho"
+  ],
+  "commonWords": [
+    "banca",
+    "feira",
+    "folheto",
+    "garapa",
+    "martelo",
+    "pano",
+    "poeira",
+    "pregao",
+    "sertao",
+    "vento",
+    "voz"
+  ],
+  "rareWords": [
+    "cantoria",
+    "letreiro",
+    "livrinho",
+    "memoria",
+    "rendeira",
+    "semente",
+    "xirique"
+  ],
+  "bonusRhymes": [
+    {
+      "word": "toada",
+      "rhymesWith": "estrada"
+    },
+    {
+      "word": "secreto",
+      "rhymesWith": "folheto"
+    },
+    {
+      "word": "alento",
+      "rhymesWith": "vento"
+    },
+    {
+      "word": "brilhar",
+      "rhymesWith": "clarear"
+    },
+    {
+      "word": "feliz",
+      "rhymesWith": "raiz"
+    }
+  ],
+  "ambientWords": [
+    "balaio",
+    "cartaz",
+    "corredor",
+    "lona",
+    "madeira",
+    "noite",
+    "pulsar",
+    "retrato",
+    "sanfona",
+    "tinta"
+  ]
+}

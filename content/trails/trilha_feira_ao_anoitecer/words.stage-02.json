@@ -1,0 +1,160 @@
+{
+  "$schema": "../../schema/stage.schema.json",
+  "schemaVersion": "1.0.0",
+  "trailId": "trilha_feira_ao_anoitecer",
+  "id": "e2_sumico_das_placas",
+  "order": 2,
+  "title": "O sumico das placas",
+  "timeLimitSec": 60,
+  "scenePrompt": "As barracas perdem seus nomes e a tinta parece fugir do papel.",
+  "objectiveLabel": "Recolha palavras da banca e do cartaz",
+  "narrativeStanza": [
+    "Sumiu nome de barraca,",
+    "sumiu verso do cartaz,",
+    "sem palavra a feira antiga",
+    "vai calando pouco a mais."
+  ],
+  "grid": [
+    "CORDELXX",
+    "TINTAXXX",
+    "BANCAXXX",
+    "MADEIRAX",
+    "PREGAOXX",
+    "LETREIRO",
+    "FOLHETOX",
+    "SECRETOX"
+  ],
+  "validWords": [
+    {
+      "word": "cordel",
+      "category": "common",
+      "points": 10
+    },
+    {
+      "word": "tinta",
+      "category": "common",
+      "points": 10
+    },
+    {
+      "word": "banca",
+      "category": "common",
+      "points": 10
+    },
+    {
+      "word": "madeira",
+      "category": "rare",
+      "points": 20
+    },
+    {
+      "word": "pregao",
+      "category": "common",
+      "points": 10
+    },
+    {
+      "word": "letreiro",
+      "category": "rare",
+      "points": 20
+    }
+  ],
+  "rareWords": [
+    "madeira",
+    "letreiro"
+  ],
+  "bonusRhymes": [
+    {
+      "word": "folheto",
+      "rhymesWith": "secreto",
+      "points": 30,
+      "tag": "curated"
+    },
+    {
+      "word": "secreto",
+      "rhymesWith": "folheto",
+      "points": 30,
+      "tag": "curated"
+    }
+  ],
+  "gridPlacements": [
+    {
+      "id": "word-cordel",
+      "word": "CORDEL",
+      "category": "common",
+      "start": [0, 0],
+      "end": [0, 5],
+      "direction": "E"
+    },
+    {
+      "id": "word-tinta",
+      "word": "TINTA",
+      "category": "common",
+      "start": [1, 0],
+      "end": [1, 4],
+      "direction": "E"
+    },
+    {
+      "id": "word-banca",
+      "word": "BANCA",
+      "category": "common",
+      "start": [2, 0],
+      "end": [2, 4],
+      "direction": "E"
+    },
+    {
+      "id": "word-madeira",
+      "word": "MADEIRA",
+      "category": "rare",
+      "start": [3, 0],
+      "end": [3, 6],
+      "direction": "E"
+    },
+    {
+      "id": "word-pregao",
+      "word": "PREGAO",
+      "category": "common",
+      "start": [4, 0],
+      "end": [4, 5],
+      "direction": "E"
+    },
+    {
+      "id": "word-letreiro",
+      "word": "LETREIRO",
+      "category": "rare",
+      "start": [5, 0],
+      "end": [5, 7],
+      "direction": "E"
+    },
+    {
+      "id": "rhyme-folheto",
+      "word": "FOLHETO",
+      "category": "rhyme",
+      "start": [6, 0],
+      "end": [6, 7],
+      "direction": "E"
+    },
+    {
+      "id": "rhyme-secreto",
+      "word": "SECRETO",
+      "category": "rhyme",
+      "start": [7, 0],
+      "end": [7, 6],
+      "direction": "E"
+    }
+  ],
+  "hint": {
+    "uses": 1,
+    "penalty": 15,
+    "behavior": "highlight-first-letter"
+  },
+  "completionRule": {
+    "requiredTargetWords": 6,
+    "bonusWordsOptional": true
+  },
+  "transitionMessage": "Lia entende que precisa recolher sinais da feira para recompor sua memoria.",
+  "transitionBeat": "O cartaz reapareceu na parede de madeira.",
+  "difficultyTags": [
+    "leitura-associacao",
+    "rima-curada",
+    "mid-grid"
+  ],
+  "audioCue": "stage-02-tambor"
+}

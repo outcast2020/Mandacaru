@@ -1,0 +1,173 @@
+{
+  "$schema": "../../schema/stage.schema.json",
+  "schemaVersion": "1.0.0",
+  "trailId": "trilha_feira_ao_anoitecer",
+  "id": "e4_chamado_do_povo",
+  "order": 4,
+  "title": "O chamado do povo",
+  "timeLimitSec": 55,
+  "scenePrompt": "A comunidade responde e cada oficio quer continuar visivel.",
+  "objectiveLabel": "Reacenda as palavras do povo",
+  "narrativeStanza": [
+    "Cada banca chama alto,",
+    "cada oficio quer ficar,",
+    "quem segura a voz do povo",
+    "faz a noite clarear."
+  ],
+  "grid": [
+    "RENDEIRA",
+    "SANFONAB",
+    "MARTELOR",
+    "REPENTEI",
+    "GARAPAXL",
+    "XIRIQUEH",
+    "CHAPEUXA",
+    "VALENTER"
+  ],
+  "validWords": [
+    {
+      "word": "rendeira",
+      "category": "rare",
+      "points": 20
+    },
+    {
+      "word": "sanfona",
+      "category": "common",
+      "points": 10
+    },
+    {
+      "word": "martelo",
+      "category": "common",
+      "points": 10
+    },
+    {
+      "word": "repente",
+      "category": "common",
+      "points": 10
+    },
+    {
+      "word": "garapa",
+      "category": "common",
+      "points": 10
+    },
+    {
+      "word": "xirique",
+      "category": "rare",
+      "points": 20
+    },
+    {
+      "word": "chapeu",
+      "category": "common",
+      "points": 10
+    }
+  ],
+  "rareWords": [
+    "rendeira",
+    "xirique"
+  ],
+  "bonusRhymes": [
+    {
+      "word": "valente",
+      "rhymesWith": "repente",
+      "points": 30,
+      "tag": "curated"
+    },
+    {
+      "word": "brilhar",
+      "rhymesWith": "clarear",
+      "points": 30,
+      "tag": "curated"
+    }
+  ],
+  "gridPlacements": [
+    {
+      "id": "word-rendeira",
+      "word": "RENDEIRA",
+      "category": "rare",
+      "start": [0, 0],
+      "end": [0, 7],
+      "direction": "E"
+    },
+    {
+      "id": "word-sanfona",
+      "word": "SANFONA",
+      "category": "common",
+      "start": [1, 0],
+      "end": [1, 6],
+      "direction": "E"
+    },
+    {
+      "id": "word-martelo",
+      "word": "MARTELO",
+      "category": "common",
+      "start": [2, 0],
+      "end": [2, 6],
+      "direction": "E"
+    },
+    {
+      "id": "word-repente",
+      "word": "REPENTE",
+      "category": "common",
+      "start": [3, 0],
+      "end": [3, 6],
+      "direction": "E"
+    },
+    {
+      "id": "word-garapa",
+      "word": "GARAPA",
+      "category": "common",
+      "start": [4, 0],
+      "end": [4, 5],
+      "direction": "E"
+    },
+    {
+      "id": "word-xirique",
+      "word": "XIRIQUE",
+      "category": "rare",
+      "start": [5, 0],
+      "end": [5, 6],
+      "direction": "E"
+    },
+    {
+      "id": "word-chapeu",
+      "word": "CHAPEU",
+      "category": "common",
+      "start": [6, 0],
+      "end": [6, 5],
+      "direction": "E"
+    },
+    {
+      "id": "rhyme-valente",
+      "word": "VALENTE",
+      "category": "rhyme",
+      "start": [7, 0],
+      "end": [7, 6],
+      "direction": "E"
+    },
+    {
+      "id": "rhyme-brilhar",
+      "word": "BRILHAR",
+      "category": "rhyme",
+      "start": [1, 7],
+      "end": [7, 7],
+      "direction": "S"
+    }
+  ],
+  "hint": {
+    "uses": 1,
+    "penalty": 15,
+    "behavior": "highlight-first-letter"
+  },
+  "completionRule": {
+    "requiredTargetWords": 7,
+    "bonusWordsOptional": true
+  },
+  "transitionMessage": "A comunidade entra em cena; nao e mais so a jornada de Lia.",
+  "transitionBeat": "A noite ganhou voz e a feira deixou de se calar.",
+  "difficultyTags": [
+    "ritmo-e-combo",
+    "alta-intensidade",
+    "late-grid"
+  ],
+  "audioCue": "stage-04-crowd"
+}

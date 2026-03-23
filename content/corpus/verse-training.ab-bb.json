@@ -1,0 +1,237 @@
+{
+  "$schema": "../schema/verse-training.schema.json",
+  "schemaVersion": "1.0.0",
+  "id": "treino_ab_bb_v1",
+  "title": "Treino base para sugestao de versos AB e BB",
+  "source": "peleja_bulebule_barreto_estruturada.json",
+  "examples": [
+    {
+      "id": "ab-06",
+      "speaker": "AB",
+      "section": "peleja",
+      "meter": "sextilha",
+      "sourceStanzaId": 6,
+      "promptContext": {
+        "theme": "apresentacao respeitosa do duelo",
+        "tone": [
+          "respeitoso",
+          "cerimonial"
+        ],
+        "topoi": [
+          "mestre",
+          "amizade",
+          "lugar de origem"
+        ],
+        "rhymeMode": "perfeita"
+      },
+      "inputSeed": "Eu sou Antonio Barreto",
+      "targetLines": [
+        "Eu sou Antonio Barreto",
+        "Santa Barbara e o meu lugar",
+        "Agora com Bule-Bule",
+        "Nosso grande avatar",
+        "Com respeito e amizade",
+        "Meu desejo e pelejar."
+      ],
+      "endWords": [
+        "Barreto",
+        "lugar",
+        "Bule-Bule",
+        "avatar",
+        "amizade",
+        "pelejar"
+      ]
+    },
+    {
+      "id": "ab-08",
+      "speaker": "AB",
+      "section": "peleja",
+      "meter": "sextilha",
+      "sourceStanzaId": 8,
+      "promptContext": {
+        "theme": "amizade em tom de peleja",
+        "tone": [
+          "brincante",
+          "fraterno"
+        ],
+        "topoi": [
+          "mestre",
+          "irmao",
+          "sertao"
+        ],
+        "rhymeMode": "toante"
+      },
+      "inputSeed": "Que e isso camarada",
+      "targetLines": [
+        "Que e isso camarada",
+        "Nao vale judiacao",
+        "Pois voce e o meu mestre",
+        "E amigo e bom irmao",
+        "E alem de tudo somos",
+        "Dois poetas do sertao."
+      ],
+      "endWords": [
+        "camarada",
+        "judiacao",
+        "mestre",
+        "irmao",
+        "somos",
+        "sertao"
+      ]
+    },
+    {
+      "id": "ab-10",
+      "speaker": "AB",
+      "section": "peleja",
+      "meter": "setilha",
+      "sourceStanzaId": 10,
+      "promptContext": {
+        "theme": "imagens do sertao e historia",
+        "tone": [
+          "imagetico",
+          "solene"
+        ],
+        "topoi": [
+          "Conselheiro",
+          "cangaceiro",
+          "gado",
+          "sertao"
+        ],
+        "rhymeMode": "perfeita"
+      },
+      "inputSeed": "O sertao e alquimia",
+      "targetLines": [
+        "O sertao e alquimia",
+        "E utero perdido",
+        "Uma fonte inesgotavel",
+        "Um jardim mais que florido",
+        "A patria de Conselheiro",
+        "O vagar de um cangaceiro",
+        "E do gado o seu mugido."
+      ],
+      "endWords": [
+        "alquimia",
+        "perdido",
+        "inesgotavel",
+        "florido",
+        "Conselheiro",
+        "cangaceiro",
+        "mugido"
+      ]
+    },
+    {
+      "id": "bb-07",
+      "speaker": "BB",
+      "section": "peleja",
+      "meter": "sextilha",
+      "sourceStanzaId": 7,
+      "promptContext": {
+        "theme": "provocacao amistosa",
+        "tone": [
+          "afiado",
+          "brincante"
+        ],
+        "topoi": [
+          "viola",
+          "preparo",
+          "desafio"
+        ],
+        "rhymeMode": "perfeita"
+      },
+      "inputSeed": "Pode entao se preparar",
+      "targetLines": [
+        "Pode entao se preparar",
+        "Que a viola esta afinada",
+        "Sou de Antonio Cardoso",
+        "E topo qualquer parada",
+        "Se prepare, seu Barreto",
+        "Que eu vou lhe dar pancada."
+      ],
+      "endWords": [
+        "preparar",
+        "afinada",
+        "Cardoso",
+        "parada",
+        "Barreto",
+        "pancada"
+      ]
+    },
+    {
+      "id": "bb-09",
+      "speaker": "BB",
+      "section": "peleja",
+      "meter": "sextilha",
+      "sourceStanzaId": 9,
+      "promptContext": {
+        "theme": "orgulho das raizes",
+        "tone": [
+          "celebratorio",
+          "didatico"
+        ],
+        "topoi": [
+          "raizes",
+          "poesia",
+          "sabedoria"
+        ],
+        "rhymeMode": "assonancia"
+      },
+      "inputSeed": "Ja que somos do sertao",
+      "targetLines": [
+        "Ja que somos do sertao",
+        "Onde tudo e alegria",
+        "Mostre bem nossas raizes",
+        "Na pegada da poesia",
+        "Entre rima e sabedoria",
+        "Com rima e sabedoria."
+      ],
+      "endWords": [
+        "sertao",
+        "alegria",
+        "raizes",
+        "poesia",
+        "sabedoria",
+        "sabedoria"
+      ]
+    },
+    {
+      "id": "bb-11",
+      "speaker": "BB",
+      "section": "peleja",
+      "meter": "setilha",
+      "sourceStanzaId": 11,
+      "promptContext": {
+        "theme": "imagem viva do sertao",
+        "tone": [
+          "imagetico",
+          "movente"
+        ],
+        "topoi": [
+          "passaro",
+          "estrada",
+          "cavalo",
+          "sol"
+        ],
+        "rhymeMode": "toante"
+      },
+      "inputSeed": "Ver um passaro ferido",
+      "targetLines": [
+        "Ver um passaro ferido",
+        "Muitas leguas por voar",
+        "A poeira nas estradas",
+        "O cavalo a galopar",
+        "O sol acordando o dia",
+        "Noites de toda magia",
+        "E depois poder sonhar."
+      ],
+      "endWords": [
+        "ferido",
+        "voar",
+        "estradas",
+        "galopar",
+        "dia",
+        "magia",
+        "sonhar"
+      ]
+    }
+  ]
+}

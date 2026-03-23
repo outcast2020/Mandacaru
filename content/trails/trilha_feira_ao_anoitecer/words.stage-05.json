@@ -1,0 +1,173 @@
+{
+  "$schema": "../../schema/stage.schema.json",
+  "schemaVersion": "1.0.0",
+  "trailId": "trilha_feira_ao_anoitecer",
+  "id": "e5_cantoria_que_fica",
+  "order": 5,
+  "title": "A cantoria que fica",
+  "timeLimitSec": 50,
+  "scenePrompt": "As palavras reunidas voltam a pulsar em voz alta no coracao da feira.",
+  "objectiveLabel": "Feche o folheto e devolva a voz a feira",
+  "narrativeStanza": [
+    "Lia junta os nomes soltos",
+    "num folheto de luar,",
+    "quando o povo le em voz alta",
+    "a feira torna a pulsar."
+  ],
+  "grid": [
+    "CANTORIA",
+    "LIVRINHO",
+    "MEMORIAX",
+    "FUTUROXM",
+    "FEIRAXXA",
+    "CHAMAXXT",
+    "RAIZXXXI",
+    "FELIZXXZ"
+  ],
+  "validWords": [
+    {
+      "word": "cantoria",
+      "category": "rare",
+      "points": 20
+    },
+    {
+      "word": "livrinho",
+      "category": "rare",
+      "points": 20
+    },
+    {
+      "word": "memoria",
+      "category": "common",
+      "points": 10
+    },
+    {
+      "word": "futuro",
+      "category": "common",
+      "points": 10
+    },
+    {
+      "word": "feira",
+      "category": "common",
+      "points": 10
+    },
+    {
+      "word": "chama",
+      "category": "common",
+      "points": 10
+    },
+    {
+      "word": "raiz",
+      "category": "common",
+      "points": 10
+    }
+  ],
+  "rareWords": [
+    "cantoria",
+    "livrinho"
+  ],
+  "bonusRhymes": [
+    {
+      "word": "feliz",
+      "rhymesWith": "raiz",
+      "points": 30,
+      "tag": "curated"
+    },
+    {
+      "word": "matiz",
+      "rhymesWith": "raiz",
+      "points": 30,
+      "tag": "curated"
+    }
+  ],
+  "gridPlacements": [
+    {
+      "id": "word-cantoria",
+      "word": "CANTORIA",
+      "category": "rare",
+      "start": [0, 0],
+      "end": [0, 7],
+      "direction": "E"
+    },
+    {
+      "id": "word-livrinho",
+      "word": "LIVRINHO",
+      "category": "rare",
+      "start": [1, 0],
+      "end": [1, 7],
+      "direction": "E"
+    },
+    {
+      "id": "word-memoria",
+      "word": "MEMORIA",
+      "category": "common",
+      "start": [2, 0],
+      "end": [2, 6],
+      "direction": "E"
+    },
+    {
+      "id": "word-futuro",
+      "word": "FUTURO",
+      "category": "common",
+      "start": [3, 0],
+      "end": [3, 5],
+      "direction": "E"
+    },
+    {
+      "id": "word-feira",
+      "word": "FEIRA",
+      "category": "common",
+      "start": [4, 0],
+      "end": [4, 4],
+      "direction": "E"
+    },
+    {
+      "id": "word-chama",
+      "word": "CHAMA",
+      "category": "common",
+      "start": [5, 0],
+      "end": [5, 4],
+      "direction": "E"
+    },
+    {
+      "id": "word-raiz",
+      "word": "RAIZ",
+      "category": "common",
+      "start": [6, 0],
+      "end": [6, 3],
+      "direction": "E"
+    },
+    {
+      "id": "rhyme-feliz",
+      "word": "FELIZ",
+      "category": "rhyme",
+      "start": [7, 0],
+      "end": [7, 4],
+      "direction": "E"
+    },
+    {
+      "id": "rhyme-matiz",
+      "word": "MATIZ",
+      "category": "rhyme",
+      "start": [3, 7],
+      "end": [7, 7],
+      "direction": "S"
+    }
+  ],
+  "hint": {
+    "uses": 1,
+    "penalty": 15,
+    "behavior": "highlight-first-letter"
+  },
+  "completionRule": {
+    "requiredTargetWords": 7,
+    "bonusWordsOptional": true
+  },
+  "transitionMessage": "A memoria volta a circular porque virou palavra compartilhada.",
+  "transitionBeat": "O folheto encheu e a feira voltou a respirar.",
+  "difficultyTags": [
+    "fechamento-poetico",
+    "alta-recompensa",
+    "late-grid"
+  ],
+  "audioCue": "stage-05-finale"
+}

@@ -1,0 +1,77 @@
+{
+  "$schema": "../../schema/trail.schema.json",
+  "schemaVersion": "1.0.0",
+  "id": "trilha_feira_ao_anoitecer",
+  "title": "Feira ao Anoitecer",
+  "subtitle": "Uma corrida de palavras no coracao do sertao",
+  "description": "Lia de Zefa tenta salvar a memoria da feira antes que o vento do esquecimento apague nomes, vozes e oficios. Esta trilha abre o universo de Mandacar\u00FA entre cordel, quadras e ecos de rima urbana, como flor que insiste em abrir no seco.",
+  "difficulty": "normal",
+  "theme": {
+    "palette": "mandacaru-noite",
+    "symbol": "flor-mandacaru",
+    "texture": "paper-woodcut"
+  },
+  "hero": {
+    "name": "Lia de Zefa",
+    "role": "entregadora de folhetos, cantadora iniciante e voz entre feira e rua",
+    "avatar": "lia-zefa",
+    "narrativeObject": "caderno-de-versos"
+  },
+  "socialContext": {
+    "location": "feira popular do interior nordestino em contato com a cidade",
+    "topics": [
+      "memoria oral",
+      "trabalho informal",
+      "comunidade",
+      "mudanca social",
+      "quadras",
+      "rima urbana"
+    ],
+    "threat": "vento do esquecimento"
+  },
+  "artDirection": {
+    "visualMood": "xilogravura contemporanea com flor de mandacaru, espinho, poeira e azul de noite",
+    "motionPreset": "dust-wind",
+    "shareCardLayout": "mandacaru-night-poster"
+  },
+  "unlockRule": {
+    "type": "default-open"
+  },
+  "scoringProfile": {
+    "common": 10,
+    "rare": 20,
+    "rhyme": 30,
+    "timeBonusStepSec": 5,
+    "timeBonusPoints": 5,
+    "comboWindowSec": 6,
+    "comboThreshold": 3,
+    "comboMultiplierCap": 1.5,
+    "hintPenalty": 15
+  },
+  "stageFiles": [
+    "words.stage-01.json",
+    "words.stage-02.json",
+    "words.stage-03.json",
+    "words.stage-04.json",
+    "words.stage-05.json"
+  ],
+  "finale": {
+    "title": "A flor nao se fechou",
+    "text": "Com as palavras reunidas, a feira volta a caber na memoria do povo e encontra um novo jeito de pulsar. No seco da noite, a voz abre como flor de mandacaru.",
+    "performanceMessages": {
+      "low": "Lia guardou parte da memoria antes do vento passar, como flor que ainda busca abrir.",
+      "mid": "A feira resistiu e seus nomes voltaram a circular, espinho e flor sustentando a lembranca.",
+      "high": "A cantoria venceu o esquecimento e a noite virou memoria viva, com a flor do mandacaru aberta sobre a cidade."
+    }
+  },
+  "shareTemplate": "Fiz {score} pontos em {trailTitle}, no Mandacar\u00FA. Ganhei {medal}. Topa fazer a rima resistir?",
+  "shareCard": {
+    "headline": "A flor abriu na noite",
+    "cta": "Encaminhe e chame outra voz para florir",
+    "badgeStyle": "mandacaru-seal",
+    "formats": [
+      "4:5",
+      "9:16"
+    ]
+  }
+}

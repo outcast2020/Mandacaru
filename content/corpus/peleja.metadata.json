@@ -1,0 +1,115 @@
+{
+  "$schema": "../schema/poetic-metadata.schema.json",
+  "schemaVersion": "1.0.0",
+  "id": "peleja_bulebule_barreto_metadata",
+  "title": "Peleja de Bule-Bule e Antonio Barreto",
+  "themes": [
+    "amizade entre mestres",
+    "desafio poetico",
+    "identidade sertaneja",
+    "memoria popular",
+    "sabedoria em duelo",
+    "bahia cantada"
+  ],
+  "tone": [
+    "respeitoso",
+    "brincante",
+    "afiado",
+    "celebratorio",
+    "imagetico"
+  ],
+  "toponyms": [
+    "Santa Barbara",
+    "Antonio Cardoso",
+    "Feira de Santana",
+    "Bahia",
+    "Brasilia",
+    "Sudao",
+    "Lamarao",
+    "Riachao"
+  ],
+  "sertaoImagery": [
+    "poeira nas estradas",
+    "cavalo a galopar",
+    "sol acordando o dia",
+    "lua inspirando",
+    "gado mugindo",
+    "rio correndo",
+    "passarada cantando",
+    "paz chamando de perto"
+  ],
+  "culturalEntities": [
+    "viola",
+    "cantoria",
+    "cordel",
+    "feira",
+    "cangaceiro",
+    "Conselheiro",
+    "Lampiao",
+    "Patativa",
+    "Padim Cico",
+    "martelo agalopado"
+  ],
+  "rhymeModes": [
+    {
+      "id": "perfeita",
+      "label": "Rima perfeita",
+      "description": "Coincidencia forte de sons finais, geralmente com mesma tonicidade e mesma terminacao sonora."
+    },
+    {
+      "id": "toante",
+      "label": "Rima toante",
+      "description": "Aproximacao parcial concentrada nas vogais tonicas ou na cadencia principal."
+    },
+    {
+      "id": "assonancia",
+      "label": "Assonancia",
+      "description": "Repeticao de vogais ou ressonancia sonora sem fechamento consonantal completo."
+    }
+  ],
+  "speakerProfiles": {
+    "AB": {
+      "label": "Antonio Barreto",
+      "traits": [
+        "mestre sereno",
+        "respeito ao oponente",
+        "imagetica historica",
+        "sotaque de autoridade poetica"
+      ],
+      "themes": [
+        "amizade",
+        "historia do sertao",
+        "mesticagem cultural",
+        "sabedoria"
+      ]
+    },
+    "BB": {
+      "label": "Bule-Bule",
+      "traits": [
+        "energia brincante",
+        "provocacao afetuosa",
+        "forca de palco",
+        "visualidade popular"
+      ],
+      "themes": [
+        "desafio",
+        "raizes",
+        "poesia oral",
+        "orgulho do sertao"
+      ]
+    },
+    "NARRADOR": {
+      "label": "Narrador",
+      "traits": [
+        "abertura imagetica",
+        "situacao de cena",
+        "contextualizacao historica"
+      ],
+      "themes": [
+        "paisagem",
+        "tempo de festa",
+        "preparacao do duelo"
+      ]
+    }
+  }
+}

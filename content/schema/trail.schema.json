@@ -1,0 +1,302 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://mandacaru.local/schema/trail.schema.json",
+  "title": "Mandacaru Trail Manifest",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "id",
+    "title",
+    "subtitle",
+    "description",
+    "difficulty",
+    "theme",
+    "hero",
+    "socialContext",
+    "artDirection",
+    "unlockRule",
+    "scoringProfile",
+    "stageFiles",
+    "finale",
+    "shareTemplate",
+    "shareCard"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "schemaVersion": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9_\\-]+$"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "subtitle": {
+      "type": "string",
+      "minLength": 1
+    },
+    "description": {
+      "type": "string",
+      "minLength": 1
+    },
+    "difficulty": {
+      "type": "string",
+      "enum": [
+        "easy",
+        "normal",
+        "hard"
+      ]
+    },
+    "theme": {
+      "type": "object",
+      "required": [
+        "palette",
+        "symbol",
+        "texture"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "palette": {
+          "type": "string"
+        },
+        "symbol": {
+          "type": "string"
+        },
+        "texture": {
+          "type": "string"
+        }
+      }
+    },
+    "hero": {
+      "type": "object",
+      "required": [
+        "name",
+        "role",
+        "avatar",
+        "narrativeObject"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "role": {
+          "type": "string"
+        },
+        "avatar": {
+          "type": "string"
+        },
+        "narrativeObject": {
+          "type": "string"
+        }
+      }
+    },
+    "socialContext": {
+      "type": "object",
+      "required": [
+        "location",
+        "topics",
+        "threat"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "location": {
+          "type": "string"
+        },
+        "topics": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string"
+          }
+        },
+        "threat": {
+          "type": "string"
+        }
+      }
+    },
+    "artDirection": {
+      "type": "object",
+      "required": [
+        "visualMood",
+        "motionPreset",
+        "shareCardLayout"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "visualMood": {
+          "type": "string"
+        },
+        "motionPreset": {
+          "type": "string"
+        },
+        "shareCardLayout": {
+          "type": "string"
+        }
+      }
+    },
+    "unlockRule": {
+      "type": "object",
+      "required": [
+        "type"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": [
+            "default-open",
+            "score-gated",
+            "progress-gated"
+          ]
+        },
+        "minimumScore": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    },
+    "scoringProfile": {
+      "type": "object",
+      "required": [
+        "common",
+        "rare",
+        "rhyme",
+        "timeBonusStepSec",
+        "timeBonusPoints",
+        "comboWindowSec",
+        "comboThreshold",
+        "comboMultiplierCap",
+        "hintPenalty"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "common": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "rare": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "rhyme": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "timeBonusStepSec": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "timeBonusPoints": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "comboWindowSec": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "comboThreshold": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "comboMultiplierCap": {
+          "type": "number",
+          "minimum": 1
+        },
+        "hintPenalty": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    },
+    "stageFiles": {
+      "type": "array",
+      "minItems": 5,
+      "maxItems": 5,
+      "items": {
+        "type": "string",
+        "pattern": "^words\\.stage\\-0[1-5]\\.json$"
+      }
+    },
+    "finale": {
+      "type": "object",
+      "required": [
+        "title",
+        "text",
+        "performanceMessages"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "title": {
+          "type": "string"
+        },
+        "text": {
+          "type": "string"
+        },
+        "performanceMessages": {
+          "type": "object",
+          "required": [
+            "low",
+            "mid",
+            "high"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "low": {
+              "type": "string"
+            },
+            "mid": {
+              "type": "string"
+            },
+            "high": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "shareTemplate": {
+      "type": "string",
+      "minLength": 1
+    },
+    "shareCard": {
+      "type": "object",
+      "required": [
+        "headline",
+        "cta",
+        "badgeStyle",
+        "formats"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "headline": {
+          "type": "string"
+        },
+        "cta": {
+          "type": "string"
+        },
+        "badgeStyle": {
+          "type": "string"
+        },
+        "formats": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "enum": [
+              "4:5",
+              "9:16"
+            ]
+          }
+        }
+      }
+    }
+  }
+}
