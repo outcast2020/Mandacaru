@@ -7,6 +7,9 @@ interface StageSidebarProps {
   onHint: () => void;
   canUseHint: boolean;
   feedback: string;
+  stageFocus: string;
+  comboPrompt: string;
+  pressureText: string;
 }
 
 function isFound(word: string, stage: TrailStage, foundIds: Set<string>): boolean {
@@ -14,13 +17,27 @@ function isFound(word: string, stage: TrailStage, foundIds: Set<string>): boolea
   return stage.gridPlacements.some((placement) => placement.word === upperWord && foundIds.has(placement.id));
 }
 
-export function StageSidebar({ manifest, stage, foundIds, onHint, canUseHint, feedback }: StageSidebarProps) {
+export function StageSidebar({
+  manifest,
+  stage,
+  foundIds,
+  onHint,
+  canUseHint,
+  feedback,
+  stageFocus,
+  comboPrompt,
+  pressureText,
+}: StageSidebarProps) {
   return (
     <aside className="stage-sidebar">
       <article className="side-card">
         <p className="eyebrow">Missao</p>
         <h3>{stage.transitionBeat}</h3>
         <p>{stage.transitionMessage}</p>
+        <div className="mission-tags">
+          <span>{stageFocus}</span>
+          <span>{pressureText}</span>
+        </div>
       </article>
 
       <article className="side-card">
@@ -47,6 +64,7 @@ export function StageSidebar({ manifest, stage, foundIds, onHint, canUseHint, fe
       <article className="side-card">
         <p className="eyebrow">Rimas bonus</p>
         <h3>Selos poeticos</h3>
+        <p>{comboPrompt}</p>
         <ul className="target-list target-list-rhyme">
           {stage.bonusRhymes.map((target) => (
             <li className={isFound(target.word, stage, foundIds) ? 'is-found' : ''} key={target.word}>

@@ -8,6 +8,8 @@ interface SessionInterludeProps {
   comboBest: number;
   foundRhymes: number;
   isFinalStage: boolean;
+  nextFocus: string;
+  watermarkUrl: string;
   onContinue: () => void;
 }
 
@@ -21,13 +23,19 @@ export function SessionInterlude({
   comboBest,
   foundRhymes,
   isFinalStage,
+  nextFocus,
+  watermarkUrl,
   onContinue,
 }: SessionInterludeProps) {
   return (
     <section className="session-card session-interlude">
-      <p className="eyebrow">Ato {stageOrder} de {totalStages}</p>
+      <img alt="" aria-hidden="true" className="session-watermark" decoding="async" loading="lazy" src={watermarkUrl} />
+      <p className="eyebrow">
+        Ato {stageOrder} de {totalStages}
+      </p>
       <h2>{beat}</h2>
       <p className="session-lead">{message}</p>
+      <p className="session-next-focus">{nextFocus}</p>
 
       <div className="session-metrics">
         <div>
@@ -46,7 +54,7 @@ export function SessionInterlude({
 
       <div className="session-actions">
         <button className="replay-button" onClick={onContinue} type="button">
-          {isFinalStage ? 'Ver resultado final' : `Seguir para ${title}`}
+          {isFinalStage ? 'Receber a consagracao final' : `Seguir para ${title}`}
         </button>
       </div>
     </section>

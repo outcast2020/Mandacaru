@@ -8,7 +8,15 @@ import { WordGrid } from '../components/WordGrid';
 import { getPlacementPoints, getTimeBonus } from '../game/scoring';
 import { CellCoord, getCellKey, getCellsForPlacement, getPathBetween, matchPlacement } from '../game/selection';
 import { getPoeticToolkit, getTrailPackage } from '../services/loaders';
-import { playComboAudio } from '../services/fx';
+import {
+  getAudioEnabled,
+  playComboAudio,
+  playMistakeAudio,
+  playPlacementAudio,
+  playStageCueAudio,
+  resumeAudio,
+  setAudioEnabled,
+} from '../services/fx';
 import { getWeeklyChallenge } from '../services/challenge';
 import {
   fetchRanking,
@@ -25,6 +33,7 @@ const trailPackage = getTrailPackage('trilha_feira_ao_anoitecer');
 const poeticToolkit = getPoeticToolkit();
 const totalStages = trailPackage.stages.length;
 const narratorOpening = poeticToolkit.corpus.stanzas.find((item) => item.speaker === 'NARRADOR');
+const cordelWatermarkUrl = new URL('../../logo_cordel_positivo.png', import.meta.url).href;
 
 type ViewMode = 'stage' | 'interlude' | 'final';
 type StageOutcome = 'won' | 'lost' | null;
@@ -65,11 +74,64 @@ interface CellBurstState {
   token: number;
 }
 
+interface FeedbackPulseState {
+  kind: 'common' | 'rare' | 'rhyme' | 'error' | 'victory';
+  title: string;
+  detail: string;
+  token: number;
+}
+
+interface StageFlavor {
+  focus: string;
+  pressure: string;
+  comboPrompt: string;
+  introLabel: string;
+  introLead: string;
+}
+
 const comboNarratives: Record<number, string> = {
   3: 'A flor do mandacaru abriu no escuro.',
   4: 'Os espinhos viraram defesa da voz.',
   5: 'A rua e o sertao rimaram juntos.',
   6: 'A cantoria floresceu acima da poeira.',
+};
+
+const stageFlavors: Record<number, StageFlavor> = {
+  1: {
+    focus: 'Tutorial elegante: aprender o gesto sem travar o fluxo.',
+    pressure: 'Ato de chegada. Leia, toque e entre no ritmo.',
+    comboPrompt: 'Rimas aqui servem como selo de descoberta, sem cobrar pressa.',
+    introLabel: 'Ato 1 - Chegada',
+    introLead: 'Primeiro contato com a feira. Toque simples, leitura curta e resposta imediata.',
+  },
+  2: {
+    focus: 'Mais densidade: a banca pede leitura e associacao mais rapida.',
+    pressure: 'Os nomes somem das placas. Segure a memoria no papel.',
+    comboPrompt: 'Ja vale entrar em sequencia curta para manter a banca acesa.',
+    introLabel: 'Ato 2 - Densidade',
+    introLead: 'Mais palavras, mais cartazes, menos folga. A feira exige atencao.',
+  },
+  3: {
+    focus: 'Urgencia: o vento aperta e o erro custa mais emocionalmente.',
+    pressure: 'O corredor sacode. Recupere nomes antes que o vento leve.',
+    comboPrompt: 'Use as rimas como respiro em meio a pressao do tempo.',
+    introLabel: 'Ato 3 - Urgencia',
+    introLead: 'A poeira sobe e a dramaturgia muda. Agora a trilha precisa reagir.',
+  },
+  4: {
+    focus: 'Combo e ritmo: a comunidade responde quando voce entra em fluxo.',
+    pressure: 'Chamado do povo. O jogo pede rapidez e pulsacao.',
+    comboPrompt: 'Ato de combo: encaixe acertos seguidos para fazer a feira cantar.',
+    introLabel: 'Ato 4 - Fluxo',
+    introLead: 'Cada acerto puxa outro. Este ato precisa soar e piscar como performance.',
+  },
+  5: {
+    focus: 'Fechamento heroico: cada palavra recolhida vira conquista de jornada.',
+    pressure: 'Ultimo folheto. Feche a trilha e devolva a voz a feira.',
+    comboPrompt: 'Guarde o melhor combo para o desfecho e abra as rimas finais.',
+    introLabel: 'Ato 5 - Consagracao',
+    introLead: 'A trilha pede gesto final de palco: brilho, medalha e desafio.',
+  },
 };
 
 function getCurrentStage(stageIndex: number): TrailStage {
@@ -123,6 +185,28 @@ function getMedal(stats: SessionStats): string {
   return 'Olho de Feirante';
 }
 
+function getStageFlavor(order: number): StageFlavor {
+  return stageFlavors[order] ?? stageFlavors[1];
+}
+
+function getProjectedRankingPosition(entries: RankingEntry[], score: number): number {
+  const ranked = [...entries, {
+    id: 'projection',
+    name: 'voce',
+    medal: '',
+    score,
+    stagesCompleted: totalStages,
+    totalStages,
+    createdAt: new Date(0).toISOString(),
+    mode: 'casual',
+    trailId: trailPackage.manifest.id,
+  } satisfies RankingEntry]
+    .sort((left, right) => right.score - left.score || left.createdAt.localeCompare(right.createdAt))
+    .slice(0, 10);
+
+  return ranked.findIndex((entry) => entry.id === 'projection') + 1;
+}
+
 export function App() {
   const weeklyChallenge = useMemo(() => getWeeklyChallenge(), []);
   const [mode, setMode] = useState<RankingMode>('casual');
@@ -159,22 +243,36 @@ export function App() {
   const [scoreSaved, setScoreSaved] = useState(false);
   const [ranking, setRanking] = useState<RankingEntry[]>([]);
   const [rankingSource, setRankingSource] = useState<'online' | 'local'>('local');
+  const [savedEntryId, setSavedEntryId] = useState('');
+  const [audioEnabled, setAudioEnabledState] = useState(() => getAudioEnabled());
   const [shareNotice, setShareNotice] = useState('');
   const [exportStatus, setExportStatus] = useState('');
   const [comboFx, setComboFx] = useState<ComboFxState | null>(null);
   const [cellBurst, setCellBurst] = useState<CellBurstState | null>(null);
   const [errorBurstKeys, setErrorBurstKeys] = useState<string[]>([]);
+  const [feedbackPulse, setFeedbackPulse] = useState<FeedbackPulseState | null>(null);
 
   const suppressClickRef = useRef(false);
   const comboFxTimerRef = useRef<number | null>(null);
   const cellBurstTimerRef = useRef<number | null>(null);
   const errorBurstTimerRef = useRef<number | null>(null);
+  const feedbackPulseTimerRef = useRef<number | null>(null);
+  const selectionResetTimerRef = useRef<number | null>(null);
   const shareCardRef = useRef<HTMLElement>(null);
 
   const currentStage = getCurrentStage(stageIndex);
+  const currentFlavor = getStageFlavor(currentStage.order);
+  const nextStageFlavor = getStageFlavor(Math.min(currentStage.order + 1, totalStages));
   const foundPlacements = useMemo(() => getFoundPlacements(currentStage, foundIds), [currentStage, foundIds]);
   const foundTargetCount = foundPlacements.filter((placement) => placement.category !== 'rhyme').length;
   const targetTotal = currentStage.completionRule.requiredTargetWords;
+  const rankingPosition = useMemo(() => {
+    if (savedEntryId) {
+      return ranking.findIndex((entry) => entry.id === savedEntryId) + 1;
+    }
+
+    return getProjectedRankingPosition(ranking, score);
+  }, [ranking, savedEntryId, score]);
 
   const rankingScope: RankingScope = useMemo(
     () => ({
@@ -254,8 +352,30 @@ export function App() {
       if (errorBurstTimerRef.current) {
         window.clearTimeout(errorBurstTimerRef.current);
       }
+      if (feedbackPulseTimerRef.current) {
+        window.clearTimeout(feedbackPulseTimerRef.current);
+      }
+      if (selectionResetTimerRef.current) {
+        window.clearTimeout(selectionResetTimerRef.current);
+      }
     };
   }, []);
+
+  useEffect(() => {
+    if (viewMode === 'stage') {
+      void playStageCueAudio(currentStage.audioCue, 'intro');
+      return;
+    }
+
+    if (viewMode === 'interlude') {
+      void playStageCueAudio(currentStage.audioCue, 'transition');
+      return;
+    }
+
+    if (viewMode === 'final') {
+      void playStageCueAudio(currentStage.audioCue, 'victory');
+    }
+  }, [currentStage.audioCue, stageRound, viewMode]);
 
   function resetStageLocal(nextStage: TrailStage) {
     setTimeLeft(nextStage.timeLimitSec);
@@ -278,6 +398,7 @@ export function App() {
     setComboFx(null);
     setCellBurst(null);
     setErrorBurstKeys([]);
+    setFeedbackPulse(null);
   }
 
   function restartJourney(nextMode?: RankingMode) {
@@ -299,6 +420,7 @@ export function App() {
     });
     setNickname('');
     setScoreSaved(false);
+    setSavedEntryId('');
     setShareNotice('');
     setExportStatus('');
     resetStageLocal(trailPackage.stages[0]);
@@ -344,6 +466,23 @@ export function App() {
     await playComboAudio(combo);
   }
 
+  function triggerFeedbackPulse(kind: FeedbackPulseState['kind'], title: string, detail: string) {
+    setFeedbackPulse({
+      kind,
+      title,
+      detail,
+      token: Date.now(),
+    });
+
+    if (feedbackPulseTimerRef.current) {
+      window.clearTimeout(feedbackPulseTimerRef.current);
+    }
+
+    feedbackPulseTimerRef.current = window.setTimeout(() => {
+      setFeedbackPulse(null);
+    }, 1450);
+  }
+
   function triggerCellBurst(placement: GridPlacement) {
     const keys = getCellsForPlacement(placement).map(getCellKey);
     setCellBurst({
@@ -374,11 +513,22 @@ export function App() {
     }, 420);
   }
 
+  function handleToggleAudio() {
+    const nextValue = !audioEnabled;
+    setAudioEnabled(nextValue);
+    setAudioEnabledState(nextValue);
+    setFeedback(nextValue ? 'Som ativado. A trilha volta a respirar.' : 'Som silenciado. O jogo segue em modo visual.');
+    if (nextValue) {
+      void playStageCueAudio(currentStage.audioCue, viewMode === 'final' ? 'victory' : 'intro');
+    }
+  }
+
   function finalizeStage(outcome: StageOutcome, options: FinalizeStageOptions = {}) {
     setStageOutcome(outcome);
     setCompactStanza(true);
 
     if (outcome === 'won') {
+      triggerFeedbackPulse('victory', 'Etapa vencida', 'A poeira baixou e a feira respondeu.');
       setInterludeData({
         stageTitle: currentStage.title,
         beat: currentStage.transitionBeat,
@@ -398,6 +548,7 @@ export function App() {
     }
 
     setFeedback('O tempo secou a rodada antes da flor abrir por completo.');
+    triggerFeedbackPulse('error', 'Tempo esgotado', 'A rodada fechou antes da flor abrir inteira.');
     setViewMode('final');
   }
 
@@ -454,7 +605,15 @@ export function App() {
       setStageRhymes((current) => current + 1);
     }
 
+    void playPlacementAudio(placement.category);
     triggerCellBurst(placement);
+    triggerFeedbackPulse(
+      placement.category === 'rhyme' ? 'rhyme' : placement.category === 'rare' ? 'rare' : 'common',
+      placement.category === 'rhyme' ? 'Selo de rima' : placement.category === 'rare' ? 'Palavra rara' : 'Palavra guardada',
+      placement.category === 'rhyme'
+        ? `${placement.word.toLowerCase()} abriu um atalho poetico.`
+        : `${placement.word.toLowerCase()} voltou a caber na memoria da feira.`,
+    );
     clearSelection();
 
     if (comboBonus) {
@@ -480,12 +639,20 @@ export function App() {
       setFeedback('Selecao invalida. Procure uma palavra em linha reta ou diagonal para manter a flor aberta.');
       setSelectionPath(path);
       setComboStreak(0);
+      triggerFeedbackPulse('error', 'Tracado quebrado', 'Tente uma linha reta ou diagonal para manter o fluxo.');
       triggerErrorBurst(path);
+      void playMistakeAudio();
       setSessionStats((current) => ({
         ...current,
         totalSelections: current.totalSelections + 1,
         mistakes: current.mistakes + 1,
       }));
+      if (selectionResetTimerRef.current) {
+        window.clearTimeout(selectionResetTimerRef.current);
+      }
+      selectionResetTimerRef.current = window.setTimeout(() => {
+        clearSelection();
+      }, 220);
       return;
     }
 
@@ -497,6 +664,7 @@ export function App() {
       return;
     }
 
+    void resumeAudio();
     setDragOrigin(cell);
     setAnchorCell(cell);
     setSelectionPath([cell]);
@@ -542,6 +710,8 @@ export function App() {
       return;
     }
 
+    void resumeAudio();
+
     if (!anchorCell) {
       setAnchorCell(cell);
       setSelectionPath([cell]);
@@ -566,6 +736,8 @@ export function App() {
       return;
     }
 
+    void resumeAudio();
+
     const nextTarget = currentStage.gridPlacements.find(
       (placement) => placement.category !== 'rhyme' && !foundIds.has(placement.id),
     );
@@ -585,12 +757,15 @@ export function App() {
     setScore((current) => Math.max(0, current - penalty));
     setStageScore((current) => Math.max(0, current - penalty));
     setFeedback(`Dica ativada: siga a flor pela letra ${currentStage.grid[nextHintCell.row][nextHintCell.col]}.`);
+    triggerFeedbackPulse('common', 'Dica aberta', 'Uma letra brilhou para recolocar voce no trilho.');
   }
 
   async function handleSaveScore() {
     if (!nickname.trim() || scoreSaved) {
       return;
     }
+
+    void resumeAudio();
 
     const entry: RankingEntry = {
       id: `${Date.now()}-${nickname.trim().toLowerCase()}`,
@@ -609,6 +784,8 @@ export function App() {
     setRanking(response.entries);
     setRankingSource(response.source);
     setScoreSaved(true);
+    setSavedEntryId(entry.id);
+    triggerFeedbackPulse('victory', 'Ranking atualizado', 'Sua peleja entrou no placar da trilha.');
   }
 
   function buildShareText(): string {
@@ -623,6 +800,8 @@ export function App() {
       setExportStatus('Nao foi possivel localizar o card para exportacao.');
       return;
     }
+
+    void resumeAudio();
 
     try {
       const card = await generateCardImage(shareCardRef.current, `${trailPackage.manifest.id}-${score}.png`);
@@ -640,6 +819,8 @@ export function App() {
       setShareNotice('Nao foi possivel localizar o card para compartilhar.');
       return;
     }
+
+    void resumeAudio();
 
     try {
       const card = await generateCardImage(shareCardRef.current, `${trailPackage.manifest.id}-${score}.png`);
@@ -662,10 +843,12 @@ export function App() {
   const medal = getMedal(sessionStats);
 
   return (
-    <div className="game-shell">
+    <div className={`game-shell stage-theme-${currentStage.order} view-${viewMode}`}>
       <section className="play-hero">
         <div className="hero-night-sky" aria-hidden="true" />
         <div className="hero-cactus-sigil" aria-hidden="true" />
+        <div className="hero-city-sigil" aria-hidden="true" />
+        <img alt="" aria-hidden="true" className="hero-watermark" decoding="async" loading="lazy" src={cordelWatermarkUrl} />
         <div className="play-hero-curtain play-hero-curtain-left" aria-hidden="true" />
         <div className="play-hero-curtain play-hero-curtain-right" aria-hidden="true" />
 
@@ -728,20 +911,38 @@ export function App() {
 
       {viewMode === 'stage' ? (
         <>
+          <section className="stage-intro-banner" key={`stage-intro-${stageRound}`}>
+            <p className="eyebrow">{currentFlavor.introLabel}</p>
+            <h2>{currentStage.title}</h2>
+            <p>{currentFlavor.introLead}</p>
+          </section>
+
           <StageHUD
+            audioEnabled={audioEnabled}
             combo={comboStreak}
             comboActive={Boolean(comboFx)}
             maxTime={currentStage.timeLimitSec}
+            onToggleAudio={handleToggleAudio}
+            pressureText={currentFlavor.pressure}
             score={score}
             stageLabel={`${mode === 'challenge' ? 'Desafio' : 'Ato'} ${currentStage.order} de ${totalStages}`}
+            stageOrder={currentStage.order}
             targetProgress={foundTargetCount}
             targetTotal={targetTotal}
             timeLeft={timeLeft}
+            totalStages={totalStages}
             trailTitle={trailPackage.manifest.title}
           />
 
           <main className="play-layout">
             <section className="play-main">
+              {feedbackPulse ? (
+                <div className={`feedback-pulse feedback-pulse-${feedbackPulse.kind}`} key={feedbackPulse.token}>
+                  <span>{feedbackPulse.title}</span>
+                  <strong>{feedbackPulse.detail}</strong>
+                </div>
+              ) : null}
+
               {comboFx ? (
                 <div className="combo-burst" key={comboFx.token}>
                   <span className="combo-burst-label">Combo x{comboFx.combo}</span>
@@ -782,11 +983,14 @@ export function App() {
 
             <StageSidebar
               canUseHint={!hintUsed}
+              comboPrompt={currentFlavor.comboPrompt}
               feedback={feedback}
               foundIds={foundIds}
               manifest={trailPackage.manifest}
               onHint={handleHint}
+              pressureText={currentFlavor.pressure}
               stage={currentStage}
+              stageFocus={currentFlavor.focus}
             />
           </main>
         </>
@@ -799,11 +1003,13 @@ export function App() {
           foundRhymes={interludeData.foundRhymes}
           isFinalStage={stageIndex === totalStages - 1}
           message={interludeData.message}
+          nextFocus={stageIndex === totalStages - 1 ? 'Ato final vencido. Agora a jornada vira conquista e desafio.' : nextStageFlavor.pressure}
           onContinue={moveToNextStage}
           score={interludeData.score}
           stageOrder={stageIndex + 1}
           title={trailPackage.stages[stageIndex + 1]?.title ?? 'resultado final'}
           totalStages={totalStages}
+          watermarkUrl={cordelWatermarkUrl}
         />
       ) : null}
 
@@ -814,6 +1020,7 @@ export function App() {
             cardRef={shareCardRef}
             ending={ending}
             exportStatus={exportStatus}
+            finaleTitle={trailPackage.manifest.finale.title}
             isSaved={scoreSaved}
             medal={medal}
             nickname={nickname}
@@ -824,6 +1031,7 @@ export function App() {
             onShare={handleShare}
             ranking={ranking}
             rankingMode={mode}
+            rankingPosition={rankingPosition}
             rankingSource={rankingSource}
             score={score}
             shareCta={trailPackage.manifest.shareCard.cta}
@@ -832,6 +1040,7 @@ export function App() {
             totalRhymes={sessionStats.totalRhymes}
             totalStages={totalStages}
             trailTitle={trailPackage.manifest.title}
+            watermarkUrl={cordelWatermarkUrl}
           />
 
           {shareNotice ? <p className="share-notice">{shareNotice}</p> : null}

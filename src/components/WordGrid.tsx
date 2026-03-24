@@ -61,6 +61,7 @@ export function WordGrid({
 
             return (
               <button
+                aria-pressed={selected.has(key)}
                 className={[
                   'grid-cell',
                   selected.has(key) ? 'is-selected' : '',
@@ -78,7 +79,8 @@ export function WordGrid({
                 onPointerUp={() => onCellPointerUp(cell)}
                 type="button"
               >
-                {letter}
+                <span className="grid-cell-letter">{letter}</span>
+                <span className="grid-cell-flare" aria-hidden="true" />
               </button>
             );
           }),
