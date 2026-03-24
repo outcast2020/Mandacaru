@@ -29,9 +29,10 @@ export const ShareCardPreview = forwardRef<HTMLElement, ShareCardPreviewProps>(f
       <p className="share-card-medal">{medal}</p>
       <p className="share-card-ending">{ending}</p>
       <p className="share-card-ranking">{rankingPosition > 0 ? `Ranking atual: #${rankingPosition}` : 'Entre no top 10 da trilha'}</p>
+      <div className="share-card-challenge">{cta}</div>
       <footer>
         <strong>{'Mandacar\u00FA: rima que resiste'}</strong>
-        <span>{cta}</span>
+        <span>Chame outra voz</span>
       </footer>
     </article>
   );

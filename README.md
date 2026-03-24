@@ -196,3 +196,22 @@ A prioridade agora nao e empilhar trilhas demais. A prioridade e ver a primeira 
 - vontade de replay
 
 Depois disso, a expansao editorial ganha mais seguranca e qualidade.
+
+## Audio do beta
+
+O pacote minimo atual de audio fica em `public/audio/`:
+
+- `hit-common.wav`
+- `hit-rhyme.wav`
+- `combo-up.wav`
+- `mistake-soft.wav`
+- `stage-intro.wav`
+- `victory-short.wav`
+
+O jogo usa esses arquivos como primeira opcao e mantem fallback sintetizado caso algum asset falhe.
+
+## Protocolo de teste mobile
+
+Roteiro rapido e checklist de friccao:
+
+- [TESTE_FRICCAO_MOBILE.md](C:\Users\Carlos\Documents\ai BOT\Lab\Mandacaru\TESTE_FRICCAO_MOBILE.md)

@@ -1,4 +1,4 @@
-import { RefObject, useMemo } from 'react';
+import { RefObject, useMemo, useState } from 'react';
 import { ShareCardPreview } from './ShareCardPreview';
 import type { RankingEntry, RankingMode } from '../services/ranking';
 
@@ -58,6 +58,7 @@ export function FinalResults({
   onReplay,
 }: FinalResultsProps) {
   const topThree = useMemo(() => ranking.slice(0, 3), [ranking]);
+  const [showFullRanking, setShowFullRanking] = useState(false);
 
   return (
     <section className="final-layout">
@@ -70,6 +71,13 @@ export function FinalResults({
         </div>
 
         <div className="final-score-slab">
+          <div className="final-medal-emblem" aria-hidden="true">
+            <span className="final-medal-stars">✦ ✦ ✦</span>
+            <div className="brand-stack final-medal-hat">
+              <div className="brand-hat brand-hat-small" />
+              <div className="brand-bloom brand-bloom-small" />
+            </div>
+          </div>
           <span className="meta-label">Score total</span>
           <strong>{score}</strong>
           <span className="final-medal-chip">{medal}</span>
@@ -166,25 +174,33 @@ export function FinalResults({
           </div>
         ) : null}
 
-        <ol className="leaderboard-list">
-          {ranking.length ? (
-            ranking.map((entry, index) => (
-              <li className={entry.score === score && entry.name === nickname ? 'is-player-entry' : ''} key={entry.id}>
-                <span className="leaderboard-rank">#{index + 1}</span>
-                <div className="leaderboard-avatar" aria-hidden="true">
-                  {entry.name.slice(0, 1).toUpperCase()}
-                </div>
-                <div className="leaderboard-nameplate">
-                  <strong>{entry.name}</strong>
-                  <span>{entry.medal}</span>
-                </div>
-                <span className="leaderboard-score">{entry.score}</span>
-              </li>
-            ))
-          ) : (
-            <li className="leaderboard-empty">Ainda nao ha pontuacoes salvas nesta trilha.</li>
-          )}
-        </ol>
+        <div className="leaderboard-actions">
+          <button className="ghost-button" onClick={() => setShowFullRanking((current) => !current)} type="button">
+            {showFullRanking ? 'Recolher top 10' : 'Ver top 10 completo'}
+          </button>
+        </div>
+
+        {showFullRanking ? (
+          <ol className="leaderboard-list">
+            {ranking.length ? (
+              ranking.map((entry, index) => (
+                <li className={entry.score === score && entry.name === nickname ? 'is-player-entry' : ''} key={entry.id}>
+                  <span className="leaderboard-rank">#{index + 1}</span>
+                  <div className="leaderboard-avatar" aria-hidden="true">
+                    {entry.name.slice(0, 1).toUpperCase()}
+                  </div>
+                  <div className="leaderboard-nameplate">
+                    <strong>{entry.name}</strong>
+                    <span>{entry.medal}</span>
+                  </div>
+                  <span className="leaderboard-score">{entry.score}</span>
+                </li>
+              ))
+            ) : (
+              <li className="leaderboard-empty">Ainda nao ha pontuacoes salvas nesta trilha.</li>
+            )}
+          </ol>
+        ) : null}
       </article>
     </section>
   );

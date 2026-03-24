@@ -2,8 +2,20 @@ import type { GridPlacement } from '../types/content';
 
 const AUDIO_STORAGE_KEY = 'mandacaru-audio-enabled';
 
+const AUDIO_ASSETS = {
+  combo: '/audio/combo-up.wav',
+  hit: '/audio/hit-common.wav',
+  mistake: '/audio/mistake-soft.wav',
+  rhyme: '/audio/hit-rhyme.wav',
+  stageIntro: '/audio/stage-intro.wav',
+  victory: '/audio/victory-short.wav',
+} as const;
+
+type AudioAssetKey = keyof typeof AUDIO_ASSETS;
+
 let audioContext: AudioContext | null = null;
 let cachedPreference: boolean | null = null;
+let preloadedAudio = false;
 
 function getAudioContext(): AudioContext | null {
   if (typeof window === 'undefined') {
@@ -38,30 +50,33 @@ function isAudioEnabled(): boolean {
   return cachedPreference;
 }
 
-export function getAudioEnabled(): boolean {
-  return isAudioEnabled();
+function cueRoot(cue: string): number {
+  const hash = cue.split('').reduce((total, character) => total + character.charCodeAt(0), 0);
+  return 170 + (hash % 55);
 }
 
-export function setAudioEnabled(enabled: boolean): void {
-  cachedPreference = enabled;
-
-  if (typeof window === 'undefined') {
+function warmAudioAssets(): void {
+  if (preloadedAudio || typeof window === 'undefined') {
     return;
   }
 
-  window.localStorage.setItem(AUDIO_STORAGE_KEY, enabled ? '1' : '0');
+  Object.values(AUDIO_ASSETS).forEach((src) => {
+    const audio = new Audio(src);
+    audio.preload = 'auto';
+    audio.load();
+  });
+
+  preloadedAudio = true;
 }
 
-export async function resumeAudio(): Promise<void> {
+function getPlayableContext(): AudioContext | null {
   const context = getAudioContext();
 
   if (!context || !isAudioEnabled()) {
-    return;
+    return null;
   }
 
-  if (context.state === 'suspended') {
-    await context.resume();
-  }
+  return context;
 }
 
 function scheduleTone(
@@ -114,29 +129,35 @@ function scheduleSweep(
   oscillator.stop(startAt + duration);
 }
 
-function cueRoot(cue: string): number {
-  const hash = cue.split('').reduce((total, character) => total + character.charCodeAt(0), 0);
-  return 170 + (hash % 55);
-}
-
-function getPlayableContext(): AudioContext | null {
-  const context = getAudioContext();
-
-  if (!context || !isAudioEnabled()) {
-    return null;
+async function playAsset(
+  key: AudioAssetKey,
+  options: {
+    playbackRate?: number;
+    volume?: number;
+  } = {},
+): Promise<boolean> {
+  if (typeof window === 'undefined' || !isAudioEnabled()) {
+    return false;
   }
 
-  return context;
+  try {
+    const audio = new Audio(AUDIO_ASSETS[key]);
+    audio.preload = 'auto';
+    audio.volume = options.volume ?? 0.72;
+    audio.playbackRate = options.playbackRate ?? 1;
+    await audio.play();
+    return true;
+  } catch {
+    return false;
+  }
 }
 
-export async function playPlacementAudio(category: GridPlacement['category']): Promise<void> {
+async function playPlacementFallback(category: GridPlacement['category']): Promise<void> {
   const context = getPlayableContext();
 
   if (!context) {
     return;
   }
-
-  await resumeAudio();
 
   const start = context.currentTime;
 
@@ -159,28 +180,24 @@ export async function playPlacementAudio(category: GridPlacement['category']): P
   });
 }
 
-export async function playMistakeAudio(): Promise<void> {
+async function playMistakeFallback(): Promise<void> {
   const context = getPlayableContext();
 
   if (!context) {
     return;
   }
-
-  await resumeAudio();
 
   const start = context.currentTime;
   scheduleSweep(context, 240, 162, start, 0.18, 0.028, 'sawtooth');
   scheduleTone(context, 145, start + 0.04, 0.12, 0.018, 'triangle');
 }
 
-export async function playStageCueAudio(cue: string, variant: 'intro' | 'transition' | 'victory' = 'intro'): Promise<void> {
+async function playStageFallback(cue: string, variant: 'intro' | 'transition' | 'victory'): Promise<void> {
   const context = getPlayableContext();
 
   if (!context) {
     return;
   }
-
-  await resumeAudio();
 
   const start = context.currentTime;
   const root = cueRoot(cue);
@@ -206,14 +223,12 @@ export async function playStageCueAudio(cue: string, variant: 'intro' | 'transit
   });
 }
 
-export async function playComboAudio(combo: number): Promise<void> {
+async function playComboFallback(combo: number): Promise<void> {
   const context = getPlayableContext();
 
   if (!context) {
     return;
   }
-
-  await resumeAudio();
 
   const start = context.currentTime;
   const frequencies =
@@ -224,4 +239,104 @@ export async function playComboAudio(combo: number): Promise<void> {
   frequencies.forEach((frequency, index) => {
     scheduleTone(context, frequency, start + index * 0.08, 0.18, 0.035, index === frequencies.length - 1 ? 'sine' : 'triangle');
   });
+}
+
+export function getAudioEnabled(): boolean {
+  return isAudioEnabled();
+}
+
+export function setAudioEnabled(enabled: boolean): void {
+  cachedPreference = enabled;
+
+  if (typeof window === 'undefined') {
+    return;
+  }
+
+  window.localStorage.setItem(AUDIO_STORAGE_KEY, enabled ? '1' : '0');
+}
+
+export async function resumeAudio(): Promise<void> {
+  const context = getAudioContext();
+
+  warmAudioAssets();
+
+  if (!context || !isAudioEnabled()) {
+    return;
+  }
+
+  if (context.state === 'suspended') {
+    await context.resume();
+  }
+}
+
+export async function playPlacementAudio(category: GridPlacement['category']): Promise<void> {
+  if (!isAudioEnabled()) {
+    return;
+  }
+
+  await resumeAudio();
+
+  const played =
+    category === 'rhyme'
+      ? await playAsset('rhyme', { playbackRate: 1, volume: 0.76 })
+      : await playAsset('hit', {
+          playbackRate: category === 'rare' ? 1.08 : 1,
+          volume: category === 'rare' ? 0.76 : 0.7,
+        });
+
+  if (!played) {
+    await playPlacementFallback(category);
+  }
+}
+
+export async function playMistakeAudio(): Promise<void> {
+  if (!isAudioEnabled()) {
+    return;
+  }
+
+  await resumeAudio();
+
+  const played = await playAsset('mistake', { playbackRate: 1, volume: 0.5 });
+
+  if (!played) {
+    await playMistakeFallback();
+  }
+}
+
+export async function playStageCueAudio(cue: string, variant: 'intro' | 'transition' | 'victory' = 'intro'): Promise<void> {
+  if (!isAudioEnabled()) {
+    return;
+  }
+
+  await resumeAudio();
+
+  const baseRate = 0.94 + (cueRoot(cue) % 8) * 0.015;
+  const played =
+    variant === 'victory'
+      ? await playAsset('victory', { playbackRate: 1, volume: 0.78 })
+      : await playAsset('stageIntro', {
+          playbackRate: variant === 'transition' ? Math.min(1.12, baseRate + 0.06) : baseRate,
+          volume: variant === 'transition' ? 0.44 : 0.52,
+        });
+
+  if (!played) {
+    await playStageFallback(cue, variant);
+  }
+}
+
+export async function playComboAudio(combo: number): Promise<void> {
+  if (!isAudioEnabled()) {
+    return;
+  }
+
+  await resumeAudio();
+
+  const played = await playAsset('combo', {
+    playbackRate: combo >= 6 ? 1.08 : combo >= 4 ? 1.03 : 1,
+    volume: combo >= 5 ? 0.82 : 0.74,
+  });
+
+  if (!played) {
+    await playComboFallback(combo);
+  }
 }
